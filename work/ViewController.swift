@@ -26,9 +26,8 @@ class ViewController: UIViewController, UITextFieldDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.usernameText.delegate = self //keyboard eka awama hidden karana
-        
+        //For hide the keyboard
+        self.usernameText.delegate = self
         self.passwordText.delegate = self
         
         
@@ -87,13 +86,44 @@ class ViewController: UIViewController, UITextFieldDelegate
                         self.defaultValues.set(userEmail, forKey: "useremail")
                         self.defaultValues.set(userPhone, forKey: "userphone")
                         
+                        
                         //switching the screen
-                        //performSegue(withIdentifier: "third", sender: self)
-                        self.label.text = "succesfully loged in"
+                        let alertController = UIAlertController(title: "Alert", message: "You Succesfully Loged In", preferredStyle: .alert)
+                        
+                        let okAction = UIAlertAction(title: "OK", style: .default)
+                        { (action:UIAlertAction!) in
+                            
+                            let third = self.storyboard?.instantiateViewController(withIdentifier: "thirdViewController") as! thirdViewController
+                            self.present(third, animated: true)
+                           // {
+                           //self.dismiss(animated: true, completion: nil)
+                           // }
+                        }
+                        
+                        alertController.addAction(okAction)
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                        
+                        
                         
                     }else{
                         //error message in case of invalid credential
-                        self.label.text = "Invalid username or password"
+                        //self.label.text = "Invalid username or password"
+                        
+                        let alertController = UIAlertController(title: "Alert", message: "Invalid username or password", preferredStyle: .alert)
+                        
+                        let okAction = UIAlertAction(title: "OK", style: .default)
+                        { (action:UIAlertAction!) in
+                       
+                            print("Ok button tapped")
+                            
+                        }
+                        
+                        alertController.addAction(okAction)
+                        self.present(alertController, animated: true, completion: nil)
+
+                        
+                        
                     }
                 }
            }
@@ -107,7 +137,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         self.view.endEditing(true)
     }
     
-    //keyboard enter karam ain wenna
+    //keyboard hide when touch the enter key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         usernameText.resignFirstResponder()
