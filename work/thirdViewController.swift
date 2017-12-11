@@ -32,5 +32,12 @@ class thirdViewController: UIViewController {
         performSegue(withIdentifier: "notification", sender: self)
     }
    
+    @IBAction func applyLeave(_ sender: AnyObject) {
+        
+        let applyLeave = self.storyboard?.instantiateViewController(withIdentifier: "applyLeaveViewController") as! applyLeaveViewController
+        self.present(applyLeave, animated: true)
+        
+    }
+    
 
 }
