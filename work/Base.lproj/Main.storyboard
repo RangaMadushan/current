@@ -516,6 +516,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="datePicker2Txt" destination="adp-ha-QKZ" id="MNX-dh-Teu"/>
                         <outlet property="datePickerTxt" destination="xJ1-YJ-uqF" id="0Ae-jA-pFt"/>
                     </connections>
                 </viewController>
