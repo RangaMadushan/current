@@ -13,6 +13,7 @@
 		BC48C6001FB4EFFE00EFFBD0 /* history past-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC48C5FF1FB4EFFE00EFFBD0 /* history past-filled.png */; };
 		BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */; };
 		BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */; };
+		BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC905F5D1FE972A80031588F /* ScheduleViewController.swift */; };
 		BC99DC7B1FB4C69300A72B58 /* icons8-schedule-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC771FB4C69300A72B58 /* icons8-schedule-filled.png */; };
 		BC99DC7C1FB4C69300A72B58 /* icons8-attendance-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC781FB4C69300A72B58 /* icons8-attendance-filled.png */; };
 		BC99DC7D1FB4C69300A72B58 /* icons8-notification-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC791FB4C69300A72B58 /* icons8-notification-filled.png */; };
@@ -47,6 +48,7 @@
 		BC48C5FF1FB4EFFE00EFFBD0 /* history past-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history past-filled.png"; sourceTree = "<group>"; };
 		BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = applyLeaveViewController.swift; sourceTree = "<group>"; };
+		BC905F5D1FE972A80031588F /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		BC99DC771FB4C69300A72B58 /* icons8-schedule-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-schedule-filled.png"; sourceTree = "<group>"; };
 		BC99DC781FB4C69300A72B58 /* icons8-attendance-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-attendance-filled.png"; sourceTree = "<group>"; };
 		BC99DC791FB4C69300A72B58 /* icons8-notification-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-notification-filled.png"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BCFA18AD1FB24D0400B10E24 /* secondViewController.swift */,
 				BCD937CF1FB4372900355EDE /* thirdViewController.swift */,
 				BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */,
+				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
 				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
 				BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */,
 				BCFA189A1FB243D800B10E24 /* Main.storyboard */,
@@ -312,6 +315,7 @@
 				BC48C5FA1FB4E43700EFFBD0 /* fourthViewController.swift in Sources */,
 				BCFA18991FB243D800B10E24 /* ViewController.swift in Sources */,
 				BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */,
+				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
