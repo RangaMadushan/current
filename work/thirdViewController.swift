@@ -8,15 +8,18 @@
 
 import UIKit
 
-class thirdViewController: UIViewController {
+class thirdViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -31,13 +34,31 @@ class thirdViewController: UIViewController {
     {
         performSegue(withIdentifier: "notification", sender: self)
     }
+    @IBAction func exitButton(_ sender: AnyObject)
+    {
+        exit(0)
+    }
    
-    @IBAction func applyLeave(_ sender: AnyObject) {
+    @IBAction func applyLeave(_ sender: AnyObject)
+    {
         
         let applyLeave = self.storyboard?.instantiateViewController(withIdentifier: "applyLeaveViewController") as! applyLeaveViewController
         self.present(applyLeave, animated: true)
         
     }
+    @IBAction func confirmOut(_ sender: AnyObject)
+    {
+        let toConfirmOut = self.storyboard?.instantiateViewController(withIdentifier: "confirmOut") as! confirmOutViewController
+        self.present(toConfirmOut, animated: true)
+    }
+    
+    @IBAction func confirmIn(_ sender: AnyObject)
+    {
+        let toConfirmIn = self.storyboard?.instantiateViewController(withIdentifier: "confirmIn") as! confirmInViewController
+        self.present(toConfirmIn, animated: true)
+        
+    }
+    
     
 
 }

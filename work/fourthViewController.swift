@@ -9,7 +9,8 @@
 import UIKit
 
 class fourthViewController: UIViewController {
-    @IBAction func scheduleButton(_ sender: AnyObject) {
+    @IBAction func scheduleButton(_ sender: AnyObject)
+    {
         
         let toSchedule = self.storyboard?.instantiateViewController(withIdentifier: "Schedule") as! ScheduleViewController
         self.present(toSchedule, animated: true)
