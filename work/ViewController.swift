@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 
+var selectedUser = " " //this is for get selected user for other VCs
+
 class ViewController: UIViewController, UITextFieldDelegate
 {
 
@@ -86,6 +88,8 @@ class ViewController: UIViewController, UITextFieldDelegate
                         self.defaultValues.set(userEmail, forKey: "useremail")
                         self.defaultValues.set(userPhone, forKey: "userphone")
                         
+                        selectedUser = userName //assign global selected user as username
+                        //self.label.text = userName
                         
                         //switching the screen
                         let alertController = UIAlertController(title: "Alert", message: "You Succesfully Loged In", preferredStyle: .alert)

@@ -241,6 +241,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="label" destination="1Od-gs-Yth" id="b7W-7B-rai"/>
                         <segue destination="Pdn-2P-pdb" kind="show" identifier="fourth" id="tld-Xz-98M"/>
                         <segue destination="eIh-0f-c7P" kind="show" identifier="notification" id="PcO-VQ-8rt"/>
                     </connections>
