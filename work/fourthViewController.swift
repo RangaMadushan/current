@@ -20,6 +20,13 @@ class fourthViewController: UIViewController
         
     }
 
+    @IBAction func leaveBalanceBtn(_ sender: AnyObject)
+    {
+        let toChart = self.storyboard?.instantiateViewController(withIdentifier: "showChart") as! showChartViewController
+        self.present(toChart, animated: true)
+        
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class confirmOutViewController: UIViewController {
+class confirmOutViewController: UIViewController
+{
 
     @IBOutlet weak var datePickerTxt: UITextField!
     

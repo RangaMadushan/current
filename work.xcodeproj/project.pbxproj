@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2346682010C032000F7722 /* icons8-communication-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2346672010C032000F7722 /* icons8-communication-filled-50.png */; };
+		BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2346692010C1FD000F7722 /* showChartViewController.swift */; };
+		BC23466C2010C38F000F7722 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC23466B2010C38F000F7722 /* ShinobiCharts.framework */; };
+		BC23466E2010C3FA000F7722 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC23466D2010C3FA000F7722 /* libc++.tbd */; };
+		BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23466F2010C687000F7722 /* ProgrammingLanguageData.swift */; };
 		BC48C5FA1FB4E43700EFFBD0 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */; };
 		BC48C5FC1FB4EEDA00EFFBD0 /* bar-chart-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC48C5FB1FB4EEDA00EFFBD0 /* bar-chart-filled.png */; };
 		BC48C5FE1FB4EEEF00EFFBD0 /* decrease-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC48C5FD1FB4EEEF00EFFBD0 /* decrease-filled.png */; };
@@ -44,6 +49,11 @@
 		05EE53BCEF0ABA158613005F /* Pods-work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.release.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.release.xcconfig"; sourceTree = "<group>"; };
 		3C0143A05E9CC92325FC83E9 /* Pods-work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.debug.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.debug.xcconfig"; sourceTree = "<group>"; };
 		8C07F4461D0CF4C76D5CE668 /* Pods_work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2346672010C032000F7722 /* icons8-communication-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-communication-filled-50.png"; sourceTree = "<group>"; };
+		BC2346692010C1FD000F7722 /* showChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = showChartViewController.swift; path = ../showChartViewController.swift; sourceTree = "<group>"; };
+		BC23466B2010C38F000F7722 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		BC23466D2010C3FA000F7722 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BC23466F2010C687000F7722 /* ProgrammingLanguageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguageData.swift; sourceTree = "<group>"; };
 		BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		BC48C5FB1FB4EEDA00EFFBD0 /* bar-chart-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-chart-filled.png"; sourceTree = "<group>"; };
 		BC48C5FD1FB4EEEF00EFFBD0 /* decrease-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decrease-filled.png"; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC23466E2010C3FA000F7722 /* libc++.tbd in Frameworks */,
+				BC23466C2010C38F000F7722 /* ShinobiCharts.framework in Frameworks */,
 				CAC7A0761BE8C3108C2C5C03 /* Pods_work.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +105,7 @@
 		1CCA47AD7C621F27529F7108 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC23466D2010C3FA000F7722 /* libc++.tbd */,
 				8C07F4461D0CF4C76D5CE668 /* Pods_work.framework */,
 			);
 			name = Frameworks;
@@ -122,15 +135,18 @@
 				BCFA18A81FB2465C00B10E24 /* support */,
 				BCFA18961FB243D800B10E24 /* AppDelegate.swift */,
 				BCFA18981FB243D800B10E24 /* ViewController.swift */,
+				BC23466B2010C38F000F7722 /* ShinobiCharts.framework */,
 				BCFA18AD1FB24D0400B10E24 /* secondViewController.swift */,
 				BCD937CF1FB4372900355EDE /* thirdViewController.swift */,
 				BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */,
 				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
 				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
 				BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */,
-				BCFA189A1FB243D800B10E24 /* Main.storyboard */,
 				BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */,
+				BC23466F2010C687000F7722 /* ProgrammingLanguageData.swift */,
 				BCF107A7200F3D7500AFF247 /* confirmInViewController.swift */,
+				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
+				BCFA189A1FB243D800B10E24 /* Main.storyboard */,
 				BCFA189D1FB243D800B10E24 /* Assets.xcassets */,
 				BCFA189F1FB243D800B10E24 /* LaunchScreen.storyboard */,
 				BCFA18A21FB243D800B10E24 /* Info.plist */,
@@ -147,6 +163,7 @@
 				BC99DC8D1FB4D6B300A72B58 /* icons8-fingerprint-scan-filled.png */,
 				BC48C5FF1FB4EFFE00EFFBD0 /* history past-filled.png */,
 				BC48C5FB1FB4EEDA00EFFBD0 /* bar-chart-filled.png */,
+				BC2346672010C032000F7722 /* icons8-communication-filled-50.png */,
 				BC99DC7F1FB4CF5900A72B58 /* icons8-prize-filled.png */,
 				BC99DC811FB4CF5900A72B58 /* icons8-import-filled.png */,
 				BC99DC821FB4CF5900A72B58 /* icons8-i-will-go-filled.png */,
@@ -249,6 +266,7 @@
 				BCFA189C1FB243D800B10E24 /* Main.storyboard in Resources */,
 				BC99DC8E1FB4D6B300A72B58 /* icons8-fingerprint-scan-filled.png in Resources */,
 				BC99DC7B1FB4C69300A72B58 /* icons8-schedule-filled.png in Resources */,
+				BC2346682010C032000F7722 /* icons8-communication-filled-50.png in Resources */,
 				BC99DC8C1FB4CF5900A72B58 /* icons8-airplane-take-off-filled.png in Resources */,
 				BC99DC921FB4D9F600A72B58 /* icons8-logout-rounded-up-filled.png in Resources */,
 				BC99DC861FB4CF5900A72B58 /* icons8-prize-filled.png in Resources */,
@@ -323,10 +341,12 @@
 				BCFA18991FB243D800B10E24 /* ViewController.swift in Sources */,
 				BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */,
 				BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */,
+				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
+				BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */,
 				BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,10 +470,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAGB4J8V6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/work",
+				);
 				INFOPLIST_FILE = work/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ranga-Madushan.work";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "work/ShinobiCharts.framework/Headers/ShinobiChart-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -464,10 +489,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAGB4J8V6P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/work",
+				);
 				INFOPLIST_FILE = work/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ranga-Madushan.work";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "work/ShinobiCharts.framework/Headers/ShinobiChart-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
