@@ -55,6 +55,68 @@ class AuthProvider {
         })
     } //login func
     
+    func signUp(withEmail: String, password: String, loginHandler: LoginHandler?) {
+        
+        Auth.auth().createUser(withEmail: withEmail, password: password, completion: { (user, error) in
+            
+            if error != nil{
+                
+                self.handleErrors(err: error as! NSError, loginHandler: loginHandler)
+            }else{
+                
+                if user?.uid != nil {
+                    
+                    //store the user to database
+                    DBProvider.Instance.saveUser(withID: user!.uid, email:withEmail, password: password);
+                    
+                    
+                    //login the user
+                    self.login(withEmail: withEmail, password: password, loginHandler: loginHandler);
+                
+                }
+            }
+            
+        });
+      
+        
+    } //sign up func
+    
+    
+    func isLoggedIn() -> Bool {
+        if Auth.auth().currentUser != nil {
+            return true;
+        }
+    
+        return false;
+    
+    }//func isLoggedIn
+    
+    
+    func logOut() -> Bool {
+    
+        if Auth.auth().currentUser != nil {
+        
+            do {
+            
+                try Auth.auth().signOut();
+                return true;
+            }catch{
+            
+                return false;
+            }
+        }
+        return true;
+    
+    }// func logout
+    
+    
+    
+    func userID() -> String {
+    
+        return Auth.auth().currentUser!.uid;
+    
+    }// func userID
+    
     
     private func handleErrors(err: NSError, loginHandler: LoginHandler?){
         

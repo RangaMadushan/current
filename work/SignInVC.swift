@@ -58,6 +58,37 @@ class SignInVC: UIViewController {
     }
 
     @IBAction func signUp(_ sender: AnyObject) {
+        
+        if emailTextfield.text != "" && passwordTextfield.text != ""
+        {
+            
+                AuthProvider.Instance.signUp(withEmail: emailTextfield.text!, password: passwordTextfield.text!, loginHandler: { (message) in
+                    
+                    if message != nil {
+                    
+                        self.alertTheUser(title: "Problem With Creating A New User", message: message!);
+                        
+                    }else{
+                    
+                        print("SIGNUP COMPLETED");
+                        self.emailTextfield.text = ""
+                        self.passwordTextfield.text = ""
+                        
+                        self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil)
+                        
+                    }
+                    
+                    
+                })
+        
+            
+        }else{
+            
+            self.alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password in the text fields");
+        }
+        
+        
+        
     }
     
     

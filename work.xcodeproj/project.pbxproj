@@ -19,6 +19,8 @@
 		BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */; };
 		BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */; };
 		BC635AA920137FD20062346A /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC635AA820137FD20062346A /* AuthProvider.swift */; };
+		BC635AAB20139A3A0062346A /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC635AAA20139A3A0062346A /* DBProvider.swift */; };
+		BC635AAD2013A32E0062346A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC635AAC2013A32E0062346A /* Constants.swift */; };
 		BC8115BD2013671D00282B39 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8115BC2013671D00282B39 /* SignInVC.swift */; };
 		BC8115BF20136E9700282B39 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8115BE20136E9700282B39 /* ContactsVC.swift */; };
 		BC8115C120137B0200282B39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC8115C020137B0200282B39 /* GoogleService-Info.plist */; };
@@ -65,6 +67,8 @@
 		BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = applyLeaveViewController.swift; sourceTree = "<group>"; };
 		BC635AA820137FD20062346A /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		BC635AAA20139A3A0062346A /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		BC635AAC2013A32E0062346A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC8115BC2013671D00282B39 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		BC8115BE20136E9700282B39 /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		BC8115C020137B0200282B39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		BC8115B82013665E00282B39 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC635AAC2013A32E0062346A /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				BC635AA820137FD20062346A /* AuthProvider.swift */,
+				BC635AAA20139A3A0062346A /* DBProvider.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF107A8200F3D7500AFF247 /* confirmInViewController.swift in Sources */,
+				BC635AAD2013A32E0062346A /* Constants.swift in Sources */,
 				BC48C5FA1FB4E43700EFFBD0 /* fourthViewController.swift in Sources */,
 				BCFA18991FB243D800B10E24 /* ViewController.swift in Sources */,
 				BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */,
@@ -401,6 +408,7 @@
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
+				BC635AAB20139A3A0062346A /* DBProvider.swift in Sources */,
 				BC635AA920137FD20062346A /* AuthProvider.swift in Sources */,
 				BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */,
 				BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */,
