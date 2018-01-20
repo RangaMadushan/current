@@ -26,6 +26,11 @@ class fourthViewController: UIViewController
         self.present(toChart, animated: true)
         
     }
+    @IBAction func goToChatBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "signInVC", sender: self)
+        
+    }
     
     override func viewDidLoad()
     {

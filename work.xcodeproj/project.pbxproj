@@ -18,6 +18,10 @@
 		BC48C6001FB4EFFE00EFFBD0 /* history past-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC48C5FF1FB4EFFE00EFFBD0 /* history past-filled.png */; };
 		BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */; };
 		BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */; };
+		BC635AA920137FD20062346A /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC635AA820137FD20062346A /* AuthProvider.swift */; };
+		BC8115BD2013671D00282B39 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8115BC2013671D00282B39 /* SignInVC.swift */; };
+		BC8115BF20136E9700282B39 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8115BE20136E9700282B39 /* ContactsVC.swift */; };
+		BC8115C120137B0200282B39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC8115C020137B0200282B39 /* GoogleService-Info.plist */; };
 		BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC905F5D1FE972A80031588F /* ScheduleViewController.swift */; };
 		BC99DC7B1FB4C69300A72B58 /* icons8-schedule-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC771FB4C69300A72B58 /* icons8-schedule-filled.png */; };
 		BC99DC7C1FB4C69300A72B58 /* icons8-attendance-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC781FB4C69300A72B58 /* icons8-attendance-filled.png */; };
@@ -60,6 +64,10 @@
 		BC48C5FF1FB4EFFE00EFFBD0 /* history past-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history past-filled.png"; sourceTree = "<group>"; };
 		BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = applyLeaveViewController.swift; sourceTree = "<group>"; };
+		BC635AA820137FD20062346A /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		BC8115BC2013671D00282B39 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		BC8115BE20136E9700282B39 /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		BC8115C020137B0200282B39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC905F5D1FE972A80031588F /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		BC99DC771FB4C69300A72B58 /* icons8-schedule-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-schedule-filled.png"; sourceTree = "<group>"; };
 		BC99DC781FB4C69300A72B58 /* icons8-attendance-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-attendance-filled.png"; sourceTree = "<group>"; };
@@ -111,6 +119,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC8115B82013665E00282B39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC8115B92013667B00282B39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BC8115BA2013668C00282B39 /* Conroller */ = {
+			isa = PBXGroup;
+			children = (
+				BC8115BC2013671D00282B39 /* SignInVC.swift */,
+				BC8115BE20136E9700282B39 /* ContactsVC.swift */,
+			);
+			name = Conroller;
+			sourceTree = "<group>";
+		};
+		BC8115BB201366C600282B39 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BC635AA820137FD20062346A /* AuthProvider.swift */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
 		BCFA188A1FB243D700B10E24 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +171,10 @@
 		BCFA18951FB243D800B10E24 /* work */ = {
 			isa = PBXGroup;
 			children = (
+				BC8115BB201366C600282B39 /* Plugins */,
+				BC8115BA2013668C00282B39 /* Conroller */,
+				BC8115B92013667B00282B39 /* View */,
+				BC8115B82013665E00282B39 /* Model */,
 				BCFA18A81FB2465C00B10E24 /* support */,
 				BCFA18961FB243D800B10E24 /* AppDelegate.swift */,
 				BCFA18981FB243D800B10E24 /* ViewController.swift */,
@@ -150,6 +193,7 @@
 				BCFA189D1FB243D800B10E24 /* Assets.xcassets */,
 				BCFA189F1FB243D800B10E24 /* LaunchScreen.storyboard */,
 				BCFA18A21FB243D800B10E24 /* Info.plist */,
+				BC8115C020137B0200282B39 /* GoogleService-Info.plist */,
 			);
 			path = work;
 			sourceTree = "<group>";
@@ -270,6 +314,7 @@
 				BC99DC8C1FB4CF5900A72B58 /* icons8-airplane-take-off-filled.png in Resources */,
 				BC99DC921FB4D9F600A72B58 /* icons8-logout-rounded-up-filled.png in Resources */,
 				BC99DC861FB4CF5900A72B58 /* icons8-prize-filled.png in Resources */,
+				BC8115C120137B0200282B39 /* GoogleService-Info.plist in Resources */,
 				BCFA18AC1FB246BB00B10E24 /* mainWallpaper.jpg in Resources */,
 				BCD937D21FB4381600355EDE /* michal-grosicki-235026.jpg in Resources */,
 			);
@@ -286,10 +331,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-work/Pods-work-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,11 +394,14 @@
 				BCFA18991FB243D800B10E24 /* ViewController.swift in Sources */,
 				BC48C6021FB4F20800EFFBD0 /* notificationViewController.swift in Sources */,
 				BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */,
+				BC8115BF20136E9700282B39 /* ContactsVC.swift in Sources */,
+				BC8115BD2013671D00282B39 /* SignInVC.swift in Sources */,
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
+				BC635AA920137FD20062346A /* AuthProvider.swift in Sources */,
 				BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */,
 				BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */,
 			);

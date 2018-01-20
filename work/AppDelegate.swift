@@ -8,6 +8,7 @@
 
 import UIKit
 import ShinobiCharts
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+
         
           ShinobiCharts.trialKey = "cXFg-fVgB-V1sA-ayZ9-NHhc-DVRV"
         

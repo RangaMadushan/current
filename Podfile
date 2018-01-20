@@ -8,5 +8,10 @@ target 'work' do
   # Pods for work
 
   pod 'Alamofire', '~> 4.3'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+
 
 end
