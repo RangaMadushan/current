@@ -14,7 +14,7 @@ import AVKit
 
 //AVKit for play video
 
-class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ChatVC: JSQMessagesViewController, MessageReceviedDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     private var messages = [JSQMessage]();
     
@@ -24,9 +24,12 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         super.viewDidLoad()
 
         picker.delegate = self;
+        MessagesHandler.Instance.delegate = self;
         
-        self.senderId = "1";
-        self.senderDisplayName = "ranga";
+        self.senderId = AuthProvider.Instance.userID();
+        self.senderDisplayName = AuthProvider.Instance.userName;
+        
+        MessagesHandler.Instance.observeMessages();
 
     }
     
@@ -84,9 +87,11 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         
-        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text));
+        MessagesHandler.Instance.sendMessage(senderID: senderId, senderName: senderDisplayName, text: text);
+       
+       /* messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text));
         collectionView.reloadData()
-        
+       */
         finishSendingMessage();
         //this will remove my typed text from the textfield
     }
@@ -127,13 +132,13 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         
         if let pic = info[UIImagePickerControllerOriginalImage] as? UIImage{
         
-            let img = JSQPhotoMediaItem(image: pic);
-            self.messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: img));
+            let data = UIImageJPEGRepresentation(pic, 0.01);
             
-        }else if let vidUrl = info[UIImagePickerControllerMediaURL] as? URL{
+            MessagesHandler.Instance.sendMedia(image: data, video: nil, senderID: senderId, senderName: senderDisplayName);
+            
+        }else if let vidURL = info[UIImagePickerControllerMediaURL] as? URL{
         
-            let video = JSQVideoMediaItem(fileURL: vidUrl, isReadyToPlay: true);
-            self.messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: video));
+            MessagesHandler.Instance.sendMedia(image: nil, video: vidURL, senderID: senderId, senderName: senderDisplayName);
             
         }
         self.dismiss(animated: true, completion: nil);
@@ -141,6 +146,17 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     }
     
     //END PICKER VIEW FUNCTION
+    
+    
+    
+    //  STATR DELEGATION FUNCTIONS
+
+    func messageReceived(senderID: String, senderName: String, text: String) {
+        messages.append(JSQMessage(senderId: senderID, displayName: senderName, text: text));
+        collectionView.reloadData();
+    }
+    
+    //  END DELEGATION FUNCTIONS
 
     
     @IBAction func backBtn(_ sender: AnyObject) {

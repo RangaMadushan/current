@@ -37,6 +37,7 @@ class AuthProvider {
         return _instance;
     }
     
+    var userName = "";
     
     func login(withEmail: String, password: String, loginHandler: LoginHandler?){
         

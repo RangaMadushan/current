@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4D20145DCE00681BE8 /* Contact.swift */; };
 		BC0E5F5020147B6A00681BE8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */; };
+		BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */; };
 		BC2346682010C032000F7722 /* icons8-communication-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2346672010C032000F7722 /* icons8-communication-filled-50.png */; };
 		BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2346692010C1FD000F7722 /* showChartViewController.swift */; };
 		BC23466C2010C38F000F7722 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC23466B2010C38F000F7722 /* ShinobiCharts.framework */; };
@@ -59,6 +60,7 @@
 		8C07F4461D0CF4C76D5CE668 /* Pods_work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0E5F4D20145DCE00681BE8 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
 		BC2346672010C032000F7722 /* icons8-communication-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-communication-filled-50.png"; sourceTree = "<group>"; };
 		BC2346692010C1FD000F7722 /* showChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = showChartViewController.swift; path = ../showChartViewController.swift; sourceTree = "<group>"; };
 		BC23466B2010C38F000F7722 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				BC635AA820137FD20062346A /* AuthProvider.swift */,
 				BC635AAA20139A3A0062346A /* DBProvider.swift */,
+				BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			files = (
 				BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */,
 				BCF107A8200F3D7500AFF247 /* confirmInViewController.swift in Sources */,
+				BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */,
 				BC0E5F5020147B6A00681BE8 /* ChatVC.swift in Sources */,
 				BC635AAD2013A32E0062346A /* Constants.swift in Sources */,
 				BC48C5FA1FB4E43700EFFBD0 /* fourthViewController.swift in Sources */,
