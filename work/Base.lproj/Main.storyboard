@@ -438,11 +438,37 @@
                     </view>
                     <connections>
                         <outlet property="myTable" destination="U2t-B6-Pxp" id="PnB-Wf-HwM"/>
+                        <segue destination="bEB-Ei-DP0" kind="show" identifier="ChatSegue" id="VwE-Nu-bLr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qez-MR-4HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="731.25" y="615.84507042253517"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="ro0-cX-4k6">
+            <objects>
+                <viewController id="PkX-gw-HJ5" customClass="ChatVC" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dj9-6l-ZS0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ciT-5m-Ofi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DGp-5s-CGb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat" id="Esv-EA-0XR">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Mgt-BO-Mis">
+                            <connections>
+                                <action selector="backBtn:" destination="PkX-gw-HJ5" id="3sk-aZ-7Pm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0SO-eB-Vb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2574" y="616"/>
         </scene>
         <!--Notification View Controller-->
         <scene sceneID="QZ1-ad-mDe">
@@ -941,35 +967,35 @@
                                 <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07i-si-zqo">
-                                <frame key="frameInset" minX="4.69%" minY="29.61%" width="88.75%" height="31"/>
+                                <frame key="frameInset" minX="4.69%" minY="29.74%" width="89.06%" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptl-dO-OPM">
-                                <frame key="frameInset" minX="4.69%" minY="23.51%" width="88.75%" height="32"/>
+                                <frame key="frameInset" minX="4.69%" minY="23.69%" width="89.06%" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E13-Bp-fGE">
-                                <frame key="frameInset" minX="4.69%" minY="10.45%" width="88.75%" height="32"/>
+                                <frame key="frameInset" minX="4.69%" minY="10.63%" width="89.06%" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9n7-Fg-ITG">
-                                <frame key="frameInset" minX="4.69%" minY="16.42%" width="88.75%" height="32"/>
+                                <frame key="frameInset" minX="4.69%" minY="16.60%" width="89.06%" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-bF-xVS">
-                                <frame key="frameInset" minX="57.19%" minY="4.38%" width="36.25%" height="20"/>
+                                <frame key="frameInset" minX="57.19%" minY="4.56%" width="36.56%" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -981,7 +1007,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyC-AQ-91d">
-                                <frame key="frameInset" minX="4.69%" minY="4.38%" width="16.25%" height="20"/>
+                                <frame key="frameInset" minX="4.69%" minY="4.56%" width="16.25%" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27081549657534248" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Back"/>
@@ -990,14 +1016,14 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-lC-SL8">
-                                <frame key="frameInset" minX="4.69%" minY="35.70%" width="88.75%" height="33"/>
+                                <frame key="frameInset" minX="4.69%" minY="35.77%" width="89.06%" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-u5-in3">
-                                <frame key="frameInset" minX="15" minY="50.84%" width="285" height="29"/>
+                                <frame key="frameInset" minX="15" minY="50.93%" width="285" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1018,6 +1044,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txi-P6-wqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2239" y="-174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FkX-2a-32G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bEB-Ei-DP0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N6C-Jd-Xif">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PkX-gw-HJ5" kind="relationship" relationship="rootViewController" id="ufk-7B-fqu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1A-v9-uY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="616"/>
         </scene>
     </scenes>
     <resources>

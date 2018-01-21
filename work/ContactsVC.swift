@@ -13,6 +13,7 @@ class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     @IBOutlet weak var myTable: UITableView!
     
     private let CELL_ID = "Cell";
+    private let CHAT_SEGUE = "ChatSegue";
     
     private var contacts = [Contact]();
     //create a Contact type array to get name and id
@@ -57,6 +58,13 @@ class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         return cell;
     }
     //close of the relavant table
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: CHAT_SEGUE, sender: nil);
+    
+    }//this func also relevant for table to take what is the selected cell
+    
     
     @IBAction func logout(_ sender: AnyObject) {
 
