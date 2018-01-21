@@ -14,6 +14,7 @@ target 'work' do
   pod 'Firebase/Database'
   pod 'JSQMessagesViewController'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
 
 
 

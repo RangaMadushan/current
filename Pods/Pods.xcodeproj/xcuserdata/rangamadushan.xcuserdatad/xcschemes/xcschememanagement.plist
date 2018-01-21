@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63BD195EF450C8F418356F5CAE9CE19B</key>
+		<key>4084F1C7C158425DEB956A0C968BA5D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA354C3CDADBB5D8FECD2F4D6976F314</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCC84616BA8F24C7F3979352EB3951DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -88,11 +103,6 @@
 			<true/>
 		</dict>
 		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E75C81849C4E57607A97BB59518766CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
