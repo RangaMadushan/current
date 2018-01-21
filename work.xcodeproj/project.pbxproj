@@ -134,6 +134,7 @@
 			children = (
 				BC635AAC2013A32E0062346A /* Constants.swift */,
 				BC0E5F4D20145DCE00681BE8 /* Contact.swift */,
+				BC23466F2010C687000F7722 /* ProgrammingLanguageData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -151,6 +152,16 @@
 				BC8115BC2013671D00282B39 /* SignInVC.swift */,
 				BC8115BE20136E9700282B39 /* ContactsVC.swift */,
 				BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */,
+				BCFA18981FB243D800B10E24 /* ViewController.swift */,
+				BCFA18AD1FB24D0400B10E24 /* secondViewController.swift */,
+				BCD937CF1FB4372900355EDE /* thirdViewController.swift */,
+				BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */,
+				BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */,
+				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
+				BCF107A7200F3D7500AFF247 /* confirmInViewController.swift */,
+				BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */,
+				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
+				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -186,29 +197,18 @@
 		BCFA18951FB243D800B10E24 /* work */ = {
 			isa = PBXGroup;
 			children = (
-				BC8115BB201366C600282B39 /* Plugins */,
-				BC8115BA2013668C00282B39 /* Conroller */,
-				BC8115B92013667B00282B39 /* View */,
 				BC8115B82013665E00282B39 /* Model */,
+				BC8115B92013667B00282B39 /* View */,
+				BC8115BA2013668C00282B39 /* Conroller */,
+				BC8115BB201366C600282B39 /* Plugins */,
 				BCFA18A81FB2465C00B10E24 /* support */,
 				BCFA18961FB243D800B10E24 /* AppDelegate.swift */,
-				BCFA18981FB243D800B10E24 /* ViewController.swift */,
-				BC23466B2010C38F000F7722 /* ShinobiCharts.framework */,
-				BCFA18AD1FB24D0400B10E24 /* secondViewController.swift */,
-				BCD937CF1FB4372900355EDE /* thirdViewController.swift */,
-				BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */,
-				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
-				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
-				BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */,
-				BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */,
-				BC23466F2010C687000F7722 /* ProgrammingLanguageData.swift */,
-				BCF107A7200F3D7500AFF247 /* confirmInViewController.swift */,
-				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
 				BCFA189A1FB243D800B10E24 /* Main.storyboard */,
-				BCFA189D1FB243D800B10E24 /* Assets.xcassets */,
 				BCFA189F1FB243D800B10E24 /* LaunchScreen.storyboard */,
 				BCFA18A21FB243D800B10E24 /* Info.plist */,
 				BC8115C020137B0200282B39 /* GoogleService-Info.plist */,
+				BCFA189D1FB243D800B10E24 /* Assets.xcassets */,
+				BC23466B2010C38F000F7722 /* ShinobiCharts.framework */,
 			);
 			path = work;
 			sourceTree = "<group>";
