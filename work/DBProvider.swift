@@ -10,9 +10,16 @@ import Foundation
 import FirebaseDatabase
 import FirebaseStorage
 
+//create a protocol for func dataReceived
+protocol FetchData: class {
+    func dataReceived(contacts: [Contact]);
+}
+
 class DBProvider {
     
     private static let _instance = DBProvider();
+    
+    weak var delegate: FetchData?;
     
     //this private init for confirm any other class cannot allowed this object
     private init() {}
@@ -71,6 +78,33 @@ class DBProvider {
         
         contactsRef.child(withID).setValue(data);
     }//func saveUser
+    
+    
+    func getContacts() {
+        
+        
+        contactsRef.observeSingleEvent(of: DataEventType.value) {
+            (snapshot: DataSnapshot) in
+            
+            var contacts = [Contact]();
+            
+            if let myContacts = snapshot.value as? NSDictionary {
+            
+                for (key, value) in myContacts {
+                    if let contactData = value as? NSDictionary {
+                        if let email = contactData[Constants.EMAIL] as? String{
+                        
+                            let id = key as! String;
+                            let newContact = Contact(id: id, name: email);
+                            contacts.append(newContact);
+                        }
+                    }
+                }
+            }
+            self.delegate?.dataReceived(contacts: contacts);
+        }
+        
+    }//func to fetch database data
     
 }// class
 

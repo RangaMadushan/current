@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4D20145DCE00681BE8 /* Contact.swift */; };
 		BC2346682010C032000F7722 /* icons8-communication-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2346672010C032000F7722 /* icons8-communication-filled-50.png */; };
 		BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2346692010C1FD000F7722 /* showChartViewController.swift */; };
 		BC23466C2010C38F000F7722 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC23466B2010C38F000F7722 /* ShinobiCharts.framework */; };
@@ -55,6 +56,7 @@
 		05EE53BCEF0ABA158613005F /* Pods-work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.release.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.release.xcconfig"; sourceTree = "<group>"; };
 		3C0143A05E9CC92325FC83E9 /* Pods-work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.debug.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.debug.xcconfig"; sourceTree = "<group>"; };
 		8C07F4461D0CF4C76D5CE668 /* Pods_work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0E5F4D20145DCE00681BE8 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BC2346672010C032000F7722 /* icons8-communication-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-communication-filled-50.png"; sourceTree = "<group>"; };
 		BC2346692010C1FD000F7722 /* showChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = showChartViewController.swift; path = ../showChartViewController.swift; sourceTree = "<group>"; };
 		BC23466B2010C38F000F7722 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				BC635AAC2013A32E0062346A /* Constants.swift */,
+				BC0E5F4D20145DCE00681BE8 /* Contact.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */,
 				BCF107A8200F3D7500AFF247 /* confirmInViewController.swift in Sources */,
 				BC635AAD2013A32E0062346A /* Constants.swift in Sources */,
 				BC48C5FA1FB4E43700EFFBD0 /* fourthViewController.swift in Sources */,

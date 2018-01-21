@@ -22,6 +22,14 @@ class SignInVC: UIViewController {
 
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if AuthProvider.Instance.isLoggedIn(){
+        
+            self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil);
+            
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
