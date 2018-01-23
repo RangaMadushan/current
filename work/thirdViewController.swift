@@ -14,18 +14,15 @@ class thirdViewController: UIViewController
 {
 
     @IBOutlet weak var label: UILabel!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         label.text = "Welcome"
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     
     @IBAction func profile(_ sender: AnyObject)
@@ -60,9 +57,7 @@ class thirdViewController: UIViewController
     @IBAction func confirmOut(_ sender: AnyObject)
     {
         performSegue(withIdentifier: "confirmOutSegue", sender: nil);
-        /*let toConfirmOut = self.storyboard?.instantiateViewController(withIdentifier: "confirmOut") as! confirmOutViewController
-        self.present(toConfirmOut, animated: true)
-        */
+       
     }
     
     
@@ -71,14 +66,18 @@ class thirdViewController: UIViewController
     {
         
         performSegue(withIdentifier: "confirmInSegue", sender: nil)
-        /*let toConfirmIn = self.storyboard?.instantiateViewController(withIdentifier: "confirmIn") as! confirmInViewController
-        self.present(toConfirmIn, animated: true)
-        */
+       
     }
     
     @IBAction func logoutBtn(_ sender: AnyObject) {
         
     
+        
+    }
+    
+    @IBAction func goFrPrintBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "fingerprintSegue", sender: nil)
         
     }
     

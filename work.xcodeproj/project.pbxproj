@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0BADC32016E0F60097BA6C /* myDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BADC22016E0F60097BA6C /* myDetailViewController.swift */; };
+		BC0BADC52016E1640097BA6C /* myRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BADC42016E1640097BA6C /* myRankViewController.swift */; };
+		BC0BADC72016E1870097BA6C /* extraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BADC62016E1870097BA6C /* extraViewController.swift */; };
 		BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4D20145DCE00681BE8 /* Contact.swift */; };
 		BC0E5F5020147B6A00681BE8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */; };
 		BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */; };
@@ -62,6 +65,9 @@
 		05EE53BCEF0ABA158613005F /* Pods-work.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.release.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.release.xcconfig"; sourceTree = "<group>"; };
 		3C0143A05E9CC92325FC83E9 /* Pods-work.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-work.debug.xcconfig"; path = "Pods/Target Support Files/Pods-work/Pods-work.debug.xcconfig"; sourceTree = "<group>"; };
 		8C07F4461D0CF4C76D5CE668 /* Pods_work.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_work.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0BADC22016E0F60097BA6C /* myDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myDetailViewController.swift; sourceTree = "<group>"; };
+		BC0BADC42016E1640097BA6C /* myRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myRankViewController.swift; sourceTree = "<group>"; };
+		BC0BADC62016E1870097BA6C /* extraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extraViewController.swift; sourceTree = "<group>"; };
 		BC0E5F4D20145DCE00681BE8 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 				BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */,
 				BC18EEE02016D45000F2D348 /* PatternViewController.swift */,
 				BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */,
+				BC0BADC22016E0F60097BA6C /* myDetailViewController.swift */,
+				BC0BADC42016E1640097BA6C /* myRankViewController.swift */,
+				BC0BADC62016E1870097BA6C /* extraViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -425,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */,
+				BC0BADC72016E1870097BA6C /* extraViewController.swift in Sources */,
 				BC18EEE12016D45000F2D348 /* PatternViewController.swift in Sources */,
 				BCF107A8200F3D7500AFF247 /* confirmInViewController.swift in Sources */,
 				BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */,
@@ -437,6 +447,7 @@
 				BC8115BF20136E9700282B39 /* ContactsVC.swift in Sources */,
 				BC8115BD2013671D00282B39 /* SignInVC.swift in Sources */,
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
+				BC0BADC32016E0F60097BA6C /* myDetailViewController.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
 				BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */,
@@ -447,6 +458,7 @@
 				BC635AAB20139A3A0062346A /* DBProvider.swift in Sources */,
 				BC635AA920137FD20062346A /* AuthProvider.swift in Sources */,
 				BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */,
+				BC0BADC52016E1640097BA6C /* myRankViewController.swift in Sources */,
 				BC515BC31FDEF39C00925D9F /* applyLeaveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

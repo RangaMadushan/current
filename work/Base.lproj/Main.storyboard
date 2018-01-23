@@ -208,6 +208,9 @@
                                 <frame key="frameInset" minX="4.27%" minY="18.44%" width="38.13%" height="8.25%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-fingerprint-scan-filled.png"/>
+                                <connections>
+                                    <action selector="goFrPrintBtn:" destination="vc3-Hh-wNp" eventType="touchUpInside" id="28Z-1g-42R"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FROGOTTEN FINGERPRINT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sk-2o-bkO">
                                 <frame key="frameInset" minX="4.27%" minY="30.70%" width="38.13%" height="48"/>
@@ -754,11 +757,17 @@
                                 <frame key="frameInset" minX="57.07%" minY="14.39%" width="37.60%" height="9.14%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bar-chart-filled.png"/>
+                                <connections>
+                                    <action selector="goPattern:" destination="Pdn-2P-pdb" eventType="touchUpInside" id="ovs-cA-UA1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhk-2k-b9J">
                                 <frame key="frameInset" minX="55.20%" minY="31.63%" width="38.40%" height="9.14%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-prize-filled.png"/>
+                                <connections>
+                                    <action selector="myRankBtn:" destination="Pdn-2P-pdb" eventType="touchUpInside" id="bhc-hX-eui"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jp-GZ-m0m">
                                 <frame key="frameInset" minX="4.27%" minY="31.63%" width="38.13%" height="9.14%"/>
@@ -780,6 +789,9 @@
                                 <frame key="frameInset" minX="4.27%" minY="51.72%" width="38.13%" height="8.25%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="history past-filled.png"/>
+                                <connections>
+                                    <action selector="goHistoryBtn:" destination="Pdn-2P-pdb" eventType="touchUpInside" id="wV6-Sc-QKN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCHEDULE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCf-xt-PKg">
                                 <frame key="frameInset" minX="4.27%" minY="25.55%" width="38.13%" height="25"/>
@@ -825,6 +837,9 @@
                                 <frame key="frameInset" minX="55.20%" minY="51.72%" width="38.40%" height="8.25%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-profile-filled.png"/>
+                                <connections>
+                                    <action selector="myDetailBtn:" destination="Pdn-2P-pdb" eventType="touchUpInside" id="1G1-Tg-YZ8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY DETAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqa-a3-78K">
                                 <frame key="frameInset" minX="55.20%" minY="65.11%" width="38.40%" height="25"/>
@@ -854,8 +869,11 @@
                                 <frame key="frameInset" minX="55.20%" minY="70.77%" width="38.40%" height="8.40%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-attendance-filled.png"/>
+                                <connections>
+                                    <action selector="goExtraBtn:" destination="Pdn-2P-pdb" eventType="touchUpInside" id="4Mi-TP-SzX"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RENAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY1-Ag-ltm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXTRA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY1-Ag-ltm">
                                 <frame key="frameInset" minX="57.07%" minY="84.27%" width="38.13%" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -870,19 +888,130 @@
                         <segue destination="tQt-g9-ALW" kind="show" identifier="signInVC" id="1I8-uy-cQU"/>
                         <segue destination="vmT-rd-5wB" kind="show" identifier="contacsVCSegue2" id="sBf-ri-x3k"/>
                         <segue destination="q8B-xN-Ca2" kind="show" identifier="scheduleSegue" id="qeu-7Q-T6L"/>
-                        <segue destination="3CL-Hg-Mnu" kind="show" id="OfU-Dn-xW9"/>
+                        <segue destination="3CL-Hg-Mnu" kind="show" identifier="showChartSegue" id="OfU-Dn-xW9"/>
                         <segue destination="Ag0-3K-lUk" kind="show" identifier="patternSegue" id="Lut-2n-SNx"/>
-                        <segue destination="ib7-s1-PcD" kind="show" identifier="historySegue" id="RXJ-Bq-5ru"/>
+                        <segue destination="xUp-hy-0gi" kind="show" identifier="myDetailSegue" id="3ev-9h-86E"/>
+                        <segue destination="yWQ-a3-RKO" kind="show" identifier="myRankSegue" id="ZBj-zA-wcX"/>
+                        <segue destination="ib7-s1-PcD" kind="show" identifier="showExtraSegue" id="FfY-Oz-CI3"/>
+                        <segue destination="pVD-c1-eEr" kind="show" identifier="showHistorySegue" id="2fU-cZ-hsr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jh-TL-0TN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-518" y="-537"/>
         </scene>
-        <!--History View Controller-->
+        <!--My Detail View Controller-->
+        <scene sceneID="FTu-VQ-UDq">
+            <objects>
+                <viewController id="xUp-hy-0gi" customClass="myDetailViewController" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gEA-Gw-OeM"/>
+                        <viewControllerLayoutGuide type="bottom" id="hKT-KA-snt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xyY-N7-gmX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michal-grosicki-235026.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-E7-Hoz">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O2-2J-mDt">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85n-gO-SY5">
+                                <frame key="frameInset" minX="4.27%" minY="5.26%" width="16.53%" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27081549659999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="q8B-xN-Ca2" eventType="touchUpInside" id="wWW-uB-KFi"/>
+                                    <segue destination="Pdn-2P-pdb" kind="show" id="q2X-9o-1pF"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7y3-Si-aRS">
+                                <frame key="frameInset" minX="16" minY="135" width="343" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="1di-kA-ywL">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1di-kA-ywL" id="hkf-gB-nSq">
+                                            <frame key="frameInset" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jat-0u-Uf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320.80000000000001" y="-576.1619190404798"/>
+        </scene>
+        <!--My Rank View Controller-->
+        <scene sceneID="md3-NA-dsY">
+            <objects>
+                <viewController id="yWQ-a3-RKO" customClass="myRankViewController" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8fG-vv-Tc6"/>
+                        <viewControllerLayoutGuide type="bottom" id="9hT-kQ-CTD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NTf-17-LTU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michal-grosicki-235026.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-vT-zg4">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-sd-6KX">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGZ-EP-zEX">
+                                <frame key="frameInset" minX="4.27%" minY="5.26%" width="16.53%" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27081549659999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="q8B-xN-Ca2" eventType="touchUpInside" id="vSC-RK-QUZ"/>
+                                    <segue destination="Pdn-2P-pdb" kind="show" id="gYb-he-b55"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-XI-vdT">
+                                <frame key="frameInset" minX="16" minY="139" width="343" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="F6H-aD-qsQ">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F6H-aD-qsQ" id="mch-Ti-c9y">
+                                            <frame key="frameInset" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6C8-I8-yg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-576.1619190404798"/>
+        </scene>
+        <!--Extra View Controller-->
         <scene sceneID="83s-Xc-Ok1">
             <objects>
-                <viewController id="ib7-s1-PcD" customClass="HistoryViewController" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ib7-s1-PcD" customClass="extraViewController" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8it-6F-qav"/>
                         <viewControllerLayoutGuide type="bottom" id="K1e-4k-jRY"/>
@@ -907,7 +1036,7 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backBtn:" destination="q8B-xN-Ca2" eventType="touchUpInside" id="YIU-k6-cFr"/>
-                                    <segue destination="Pdn-2P-pdb" kind="show" id="Vc2-eG-e4E"/>
+                                    <segue destination="Pdn-2P-pdb" kind="show" id="5Em-69-GQC"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uQL-gV-af5">
@@ -931,7 +1060,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHi-rM-sz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="-1129"/>
+            <point key="canvasLocation" x="646" y="127"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="4cl-yy-hDg">
@@ -1074,7 +1203,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Em8-ff-uxs" id="E12-lw-iib">
-                                            <frame key="frameInset" width="343" height="43.5"/>
+                                            <frame key="frameInset" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1160,7 +1289,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ny0-sl-vDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="152"/>
+            <point key="canvasLocation" x="-148" y="170"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="62K-yh-yWa">
+            <objects>
+                <viewController id="pVD-c1-eEr" customClass="HistoryViewController" customModule="work" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pTG-DU-82v"/>
+                        <viewControllerLayoutGuide type="bottom" id="3o5-OK-dsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qzM-zD-hq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michal-grosicki-235026.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-Ej-S6M">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-Ga-iyX">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-OX-1C4">
+                                <frame key="frameInset" minX="4.27%" minY="5.26%" width="16.53%" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27081549659999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="q8B-xN-Ca2" eventType="touchUpInside" id="JoD-o3-K3z"/>
+                                    <segue destination="Pdn-2P-pdb" kind="show" id="yAw-oN-q3U"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-9K-cmS">
+                                <frame key="frameInset" minX="16" minY="140" width="343" height="507"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4aC-hG-loT">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4aC-hG-loT" id="N9A-rM-VmJ">
+                                            <frame key="frameInset" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqq-64-sH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-1226"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="ijd-wM-Xo2">
@@ -1301,9 +1484,9 @@
         <image name="michal-grosicki-235026.jpg" width="4592" height="3448"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aUF-v0-gbD"/>
-        <segue reference="sBf-ri-x3k"/>
         <segue reference="HKw-5z-fmD"/>
+        <segue reference="yAw-oN-q3U"/>
+        <segue reference="sBf-ri-x3k"/>
         <segue reference="R0G-UH-iO3"/>
     </inferredMetricsTieBreakers>
 </document>

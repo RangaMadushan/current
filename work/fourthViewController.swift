@@ -11,19 +11,32 @@ import UIKit
 class fourthViewController: UIViewController
 {
     
+   
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
     @IBAction func scheduleButton(_ sender: AnyObject)
     {
-        
-        let toSchedule = self.storyboard?.instantiateViewController(withIdentifier: "Schedule") as! ScheduleViewController
-        self.present(toSchedule, animated: true)
+        performSegue(withIdentifier: "scheduleSegue", sender: nil)
+        /*let toSchedule = self.storyboard?.instantiateViewController(withIdentifier: "Schedule") as! ScheduleViewController
+         self.present(toSchedule, animated: true)*/
         
         
     }
-
+    
+    //BUTTONS
+    
     @IBAction func leaveBalanceBtn(_ sender: AnyObject)
     {
-        let toChart = self.storyboard?.instantiateViewController(withIdentifier: "showChart") as! showChartViewController
-        self.present(toChart, animated: true)
+        
+        performSegue(withIdentifier: "showChartSegue", sender: nil)
+        /*let toChart = self.storyboard?.instantiateViewController(withIdentifier: "showChart") as! showChartViewController
+         self.present(toChart, animated: true)*/
         
     }
     @IBAction func goToChatBtn(_ sender: AnyObject) {
@@ -32,20 +45,84 @@ class fourthViewController: UIViewController
         
     }
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+  
+    
+    @IBAction func goPattern(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "patternSegue", sender: nil)
     }
     
 
+    @IBAction func myRankBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "myRankSegue", sender: nil)
+        
+    }
+    
+    
+    @IBAction func myDetailBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "myDetailSegue", sender: nil)
+        
+    }
+    
+    
+    
+    @IBAction func goHistoryBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "showHistorySegue", sender: nil)
+    }
+    
+    
+    
+    @IBAction func goExtraBtn(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "showExtraSegue", sender: nil)
+    }
+    
+    
+    //END OF BUTTONS
   
 
-}
+}//class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
