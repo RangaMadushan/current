@@ -17,27 +17,32 @@ class Provider {
         return _instance;
     }
     
-    var userName = "";
     
-    // func for get date
-    func getTodayString() -> String{
+    func currentDate() -> String{
         
         let date = Date()
-        let calender = Calendar.current
-        let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
+        let calendar = Calendar.current
         
-        let year = components.year
-        let month = components.month
-        let day = components.day
-        let hour = components.hour
-        let minute = components.minute
-        let second = components.second
+        let year = calendar.component(.year, from: date)
+        let month = calendar.component(.month, from: date)
+        let day = calendar.component(.day, from: date)
+        return "\(year):\(month):\(day)"
         
-        let today_string = String(year!) + "-" + String(month!) + "-" + String(day!) + " " + String(hour!)  + ":" + String(minute!) + ":" +  String(second!)
+    }// func to get current date
+    
+    func currentTime() -> String{
         
-        return today_string
+        let date = Date()
+        let calendar = Calendar.current
         
-    }//func get date
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        return "\(hour):\(minutes):\(seconds)"
+        
+    }// func to get current time
+    
+    
     
     
    

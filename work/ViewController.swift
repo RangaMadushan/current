@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 var selectedUserEmail = ""
-let myURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
+let myLoginURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
 let s = "validation successful"
 
 
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate
             "password":password
         ]
         
-        Alamofire.request(myURL, method: .post, parameters: parameters).responseJSON
+        Alamofire.request(myLoginURL, method: .post, parameters: parameters).responseJSON
             {
                 response in
                 
@@ -91,7 +91,7 @@ class ViewController: UIViewController, UITextFieldDelegate
                 }
         }
         
-    }
+    } //func parse
     
     func callAlert(message: String){
         
@@ -116,7 +116,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         self.present(applyLeave, animated: true)
         
         performSegue(withIdentifier: "thirdSegue", sender: nil)
-    }
+    } 
 
     
     
