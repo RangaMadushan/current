@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+var profileUserEmail = selectedUserEmail
+
+
 class fourthViewController: UIViewController
 {
     

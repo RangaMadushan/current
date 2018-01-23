@@ -19,6 +19,7 @@ class Provider {
     
     var userName = "";
     
+    // func for get date
     func getTodayString() -> String{
         
         let date = Date()
@@ -37,6 +38,11 @@ class Provider {
         return today_string
         
     }//func get date
+    
+    
+   
+    
+    
 
     
     
