@@ -42,6 +42,7 @@
 		BC99DC8E1FB4D6B300A72B58 /* icons8-fingerprint-scan-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC8D1FB4D6B300A72B58 /* icons8-fingerprint-scan-filled.png */; };
 		BC99DC911FB4D9F600A72B58 /* icons8-exit-sign-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC8F1FB4D9F600A72B58 /* icons8-exit-sign-filled.png */; };
 		BC99DC921FB4D9F600A72B58 /* icons8-logout-rounded-up-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = BC99DC901FB4D9F600A72B58 /* icons8-logout-rounded-up-filled.png */; };
+		BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */; };
 		BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD937CF1FB4372900355EDE /* thirdViewController.swift */; };
 		BCD937D21FB4381600355EDE /* michal-grosicki-235026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */; };
 		BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */; };
@@ -96,6 +97,7 @@
 		BC99DC8D1FB4D6B300A72B58 /* icons8-fingerprint-scan-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-fingerprint-scan-filled.png"; sourceTree = "<group>"; };
 		BC99DC8F1FB4D9F600A72B58 /* icons8-exit-sign-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-exit-sign-filled.png"; sourceTree = "<group>"; };
 		BC99DC901FB4D9F600A72B58 /* icons8-logout-rounded-up-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-logout-rounded-up-filled.png"; sourceTree = "<group>"; };
+		BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		BCD937CF1FB4372900355EDE /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "michal-grosicki-235026.jpg"; sourceTree = "<group>"; };
 		BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmOutViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
 				BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */,
 				BC18EEE02016D45000F2D348 /* PatternViewController.swift */,
+				BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
+				BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */,
 				BC18EEDF2016CAA800F2D348 /* frogetFingerViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
