@@ -8,15 +8,15 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
-var selectedUser = " " //this is for get selected user for other VCs
+var selectedUserEmail = ""
+let myURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
+let s = "validation successful"
+
 
 class ViewController: UIViewController, UITextFieldDelegate
 {
-
-    let URL_USER_LOGIN = "http://mineranga.000webhostapp.com/login.php"
-    //the defaultvalues to store user data
-    let defaultValues = UserDefaults.standard
     
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -31,109 +31,94 @@ class ViewController: UIViewController, UITextFieldDelegate
         //For hide the keyboard
         self.usernameText.delegate = self
         self.passwordText.delegate = self
-        
-        
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-        
-    }
-
-    @IBAction func registerHere(_ sender: AnyObject)
-    {
-        
-        performSegue(withIdentifier: "second", sender: self)
     }
 
     
     @IBAction func login(_ sender: AnyObject)
     {
+        let a = usernameText.text
+        let b = passwordText.text
         
+        self.parse(useremail: a!, password: b!);
         
-        //getting the username and password
+    }
+    
+    func parse(useremail: String, password: String){
+        
         let parameters: Parameters=[
-            "username":usernameText.text!,
-            "password":passwordText.text!
+            "useremail":useremail,
+            "password":password
         ]
         
-        //making a post request
-        Alamofire.request(URL_USER_LOGIN, method: .post, parameters: parameters).responseJSON
+        Alamofire.request(myURL, method: .post, parameters: parameters).responseJSON
             {
                 response in
-                //printing response
-                print(response)
                 
-                //getting the json value from the server
-                if let result = response.result.value
-                {
+                print(response);
+                
+                
+                if let result = response.result.value {
+                    
+                    //converting it as NSDictionary
                     let jsonData = result as! NSDictionary
                     
-                    //if there is no error
-                    if(!(jsonData.value(forKey: "error") as! Bool)){
+                    //displaying the message in label
+                    self.label.text = jsonData.value(forKey: "message") as! String?
+                    
+                    var str: String? = jsonData.value(forKey: "message") as! String?
+                    
+                    if s == str {
                         
-                        //getting the user from response
-                        let user = jsonData.value(forKey: "user") as! NSDictionary
-                        
-                        //getting user values
-                        let userId = user.value(forKey: "id") as! Int
-                        let userName = user.value(forKey: "username") as! String
-                        let userEmail = user.value(forKey: "email") as! String
-                        let userPhone = user.value(forKey: "phone") as! String
-                        
-                        //saving user values to defaults
-                        self.defaultValues.set(userId, forKey: "userid")
-                        self.defaultValues.set(userName, forKey: "username")
-                        self.defaultValues.set(userEmail, forKey: "useremail")
-                        self.defaultValues.set(userPhone, forKey: "userphone")
-                        
-                        selectedUser = userName //assign global selected user as username
-                        //self.label.text = userName
-                        
-                        //switching the screen
-                        let alertController = UIAlertController(title: "Alert", message: "You Succesfully Loged In", preferredStyle: .alert)
-                        
-                        let okAction = UIAlertAction(title: "OK", style: .default)
-                        { (action:UIAlertAction!) in
-                            
-                            let third = self.storyboard?.instantiateViewController(withIdentifier: "thirdViewController") as! thirdViewController
-                            self.present(third, animated: true)
-                           // {
-                           //self.dismiss(animated: true, completion: nil)
-                           // }
-                        }
-                        
-                        alertController.addAction(okAction)
-                        self.present(alertController, animated: true, completion: nil)
+                        //self.callAlert(message: "YOU SUCCESFULLY LOGGED")
+                        selectedUserEmail = self.usernameText.text!
+                        self.gotoNext()
+                       // selectedUserEmail = self.usernameText.text!
                         
                         
                         
                         
-                    }else{
-                        //error message in case of invalid credential
-                        //self.label.text = "Invalid username or password"
                         
-                        let alertController = UIAlertController(title: "Alert", message: "Invalid username or password", preferredStyle: .alert)
+                    } else {
                         
-                        let okAction = UIAlertAction(title: "OK", style: .default)
-                        { (action:UIAlertAction!) in
-                       
-                            print("Ok button tapped")
-                            
-                        }
-                        
-                        alertController.addAction(okAction)
-                        self.present(alertController, animated: true, completion: nil)
-
-                        
-                        
+                        self.callAlert(message: "CAN'T VALIDATE YOU AS AN AUTHORIZED USER")
+                        self.label.text = ""
+                        self.passwordText.text = ""
                     }
+                    
+                    
+
                 }
-           }
+        }
         
-      
     }
+    
+    func callAlert(message: String){
+        
+        let alertController = UIAlertController(title: "ALERT", message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        { (action:UIAlertAction!) in
+            
+            print("Ok button tapped")
+            
+        }
+        
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    func gotoNext() {
+        let applyLeave = self.storyboard?.instantiateViewController(withIdentifier: "thirdViewController") as! thirdViewController
+        self.present(applyLeave, animated: true)
+        
+        performSegue(withIdentifier: "thirdSegue", sender: nil)
+    }
+
+    
     
     //hide the keyboard when user touches outside keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -152,5 +137,5 @@ class ViewController: UIViewController, UITextFieldDelegate
     
     
     
-}
+} //class
 

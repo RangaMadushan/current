@@ -8,6 +8,8 @@
 
 import UIKit
 
+var myuser = selectedUserEmail;
+
 class thirdViewController: UIViewController
 {
 
@@ -15,7 +17,7 @@ class thirdViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        label.text = "Welcome " + selectedUser
+        label.text = "Welcome"
         // Do any additional setup after loading the view.
     }
 
@@ -41,34 +43,72 @@ class thirdViewController: UIViewController
     
     @IBAction func exitButton(_ sender: AnyObject)
     {
-        exit(0)
+        exit(0);
     }
    
     
     @IBAction func applyLeave(_ sender: AnyObject)
     {
         
-        let applyLeave = self.storyboard?.instantiateViewController(withIdentifier: "applyLeaveViewController") as! applyLeaveViewController
-        self.present(applyLeave, animated: true)
+        performSegue(withIdentifier: "applyLeaveSegue", sender: nil);
+       /* let applyLeave = self.storyboard?.instantiateViewController(withIdentifier: "applyLeaveViewController") as! applyLeaveViewController
+        self.present(applyLeave, animated: true) */
         
     }
     
     
     @IBAction func confirmOut(_ sender: AnyObject)
     {
-        let toConfirmOut = self.storyboard?.instantiateViewController(withIdentifier: "confirmOut") as! confirmOutViewController
+        performSegue(withIdentifier: "confirmOutSegue", sender: nil);
+        /*let toConfirmOut = self.storyboard?.instantiateViewController(withIdentifier: "confirmOut") as! confirmOutViewController
         self.present(toConfirmOut, animated: true)
+        */
     }
     
     
     
     @IBAction func confirmIn(_ sender: AnyObject)
     {
-        let toConfirmIn = self.storyboard?.instantiateViewController(withIdentifier: "confirmIn") as! confirmInViewController
+        
+        performSegue(withIdentifier: "confirmInSegue", sender: nil)
+        /*let toConfirmIn = self.storyboard?.instantiateViewController(withIdentifier: "confirmIn") as! confirmInViewController
         self.present(toConfirmIn, animated: true)
+        */
+    }
+    
+    @IBAction func logoutBtn(_ sender: AnyObject) {
+        
+    
         
     }
     
-    
 
-}
+} // class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

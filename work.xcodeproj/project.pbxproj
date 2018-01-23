@@ -10,6 +10,9 @@
 		BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4D20145DCE00681BE8 /* Contact.swift */; };
 		BC0E5F5020147B6A00681BE8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */; };
 		BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */; };
+		BC18EEDD2016C63600F2D348 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18EEDC2016C63600F2D348 /* Provider.swift */; };
+		BC18EEDF2016CAA800F2D348 /* frogetFingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */; };
+		BC18EEE12016D45000F2D348 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18EEE02016D45000F2D348 /* PatternViewController.swift */; };
 		BC2346682010C032000F7722 /* icons8-communication-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2346672010C032000F7722 /* icons8-communication-filled-50.png */; };
 		BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2346692010C1FD000F7722 /* showChartViewController.swift */; };
 		BC23466C2010C38F000F7722 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC23466B2010C38F000F7722 /* ShinobiCharts.framework */; };
@@ -61,6 +64,9 @@
 		BC0E5F4D20145DCE00681BE8 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BC0E5F4F20147B6A00681BE8 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
+		BC18EEDC2016C63600F2D348 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = frogetFingerViewController.swift; sourceTree = "<group>"; };
+		BC18EEE02016D45000F2D348 /* PatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
 		BC2346672010C032000F7722 /* icons8-communication-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-communication-filled-50.png"; sourceTree = "<group>"; };
 		BC2346692010C1FD000F7722 /* showChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = showChartViewController.swift; path = ../showChartViewController.swift; sourceTree = "<group>"; };
 		BC23466B2010C38F000F7722 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
@@ -162,6 +168,8 @@
 				BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */,
 				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
 				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
+				BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */,
+				BC18EEE02016D45000F2D348 /* PatternViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 				BC635AA820137FD20062346A /* AuthProvider.swift */,
 				BC635AAA20139A3A0062346A /* DBProvider.swift */,
 				BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */,
+				BC18EEDC2016C63600F2D348 /* Provider.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -202,9 +211,9 @@
 				BC8115BA2013668C00282B39 /* Conroller */,
 				BC8115BB201366C600282B39 /* Plugins */,
 				BCFA18A81FB2465C00B10E24 /* support */,
-				BCFA18961FB243D800B10E24 /* AppDelegate.swift */,
 				BCFA189A1FB243D800B10E24 /* Main.storyboard */,
 				BCFA189F1FB243D800B10E24 /* LaunchScreen.storyboard */,
+				BCFA18961FB243D800B10E24 /* AppDelegate.swift */,
 				BCFA18A21FB243D800B10E24 /* Info.plist */,
 				BC8115C020137B0200282B39 /* GoogleService-Info.plist */,
 				BCFA189D1FB243D800B10E24 /* Assets.xcassets */,
@@ -413,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */,
+				BC18EEE12016D45000F2D348 /* PatternViewController.swift in Sources */,
 				BCF107A8200F3D7500AFF247 /* confirmInViewController.swift in Sources */,
 				BC0E5F522014B38C00681BE8 /* MessagesHandler.swift in Sources */,
 				BC0E5F5020147B6A00681BE8 /* ChatVC.swift in Sources */,
@@ -426,8 +436,10 @@
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
+				BC18EEDF2016CAA800F2D348 /* frogetFingerViewController.swift in Sources */,
 				BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */,
 				BCFA18971FB243D800B10E24 /* AppDelegate.swift in Sources */,
+				BC18EEDD2016C63600F2D348 /* Provider.swift in Sources */,
 				BC635AAB20139A3A0062346A /* DBProvider.swift in Sources */,
 				BC635AA920137FD20062346A /* AuthProvider.swift in Sources */,
 				BC23466A2010C1FD000F7722 /* showChartViewController.swift in Sources */,
