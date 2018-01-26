@@ -8,14 +8,33 @@
 
 import UIKit
 import ShinobiCharts
+import Alamofire
+import SwiftyJSON
 
 class showChartViewController: UIViewController
 {
+    var languageName:[String] = ["Medical","casual","annual"]
+    var languageData = [Int]()
+    var array:[Int] = [5,5,4]
 
+    @IBOutlet weak var medicleLabel: UILabel!
+    
+    @IBOutlet weak var annualLabel: UILabel!
+    
+    @IBOutlet weak var casualLabel: UILabel!
+    
     @IBOutlet weak var chart: ShinobiChart!
     
-    let languageData = ProgrammingLanguageDataStore.generate()
+   // let languageData = ProgrammingLanguageDataStore.generate()
 
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        parsing(email: selectedUserEmail)
+        ShinobiCharts.trialKey = "cXFg-fVgB-V1sA-ayZ9-NHhc-DVRV"
+        chart.datasource = self
+        chart.delegate = self
+    }
     
     //FOR BAC BUTTON
     @IBAction func backy(_ sender: AnyObject) {
@@ -23,32 +42,75 @@ class showChartViewController: UIViewController
         self.present(back, animated: true)
     }
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
+   
+    func parsing (email:String) -> [Int]{
+        
+        
+        //creating parameters for the post request
+        let parameters: Parameters=[
+            
+            "email":email
+        ]
+        
+        
+        //Sending http post request
+        Alamofire.request("http://fr129.wearedesigners.net/public/api/availableleaves", method: .post, parameters: parameters).responseJSON
+            {
+                response in
+                
+                
+                //getting the json value from the server
+                if let result = response.result.value {
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    //converting it as NSDictionary
+                    let jsonData = result as! NSDictionary
+                    
+                    var medicle = jsonData.value(forKey: "remaining medical") as! Int
+                    print(medicle)
+                    self.languageData.append(medicle)
+                    print(self.languageData);
+                    self.medicleLabel.text = "\(medicle)"
+                    
+                    var annual = jsonData.value(forKey: "remaining annual") as! Int
+                    print(annual)
+                    self.languageData.append(annual)
+                    print(self.languageData);
+                    self.annualLabel.text = "\(annual)"
+                    
+                    var casual = jsonData.value(forKey: "remaining casual") as! Int
+                    print(casual)
+                    self.languageData.append(casual)
+                    print(self.languageData);
+                    self.casualLabel.text = "\(casual)"
+                    
+                    
+                    self.chart.reloadData()
+                    
+                    
+                    
+                }
+                
+                
+        }
+        
+        return languageData
+        
+    }//func
 
-        ShinobiCharts.trialKey = "cXFg-fVgB-V1sA-ayZ9-NHhc-DVRV"
-        chart.datasource = self
-        chart.delegate = self
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
-    //this action not valid
-    @IBAction func backBtn(_ sender: AnyObject)
-    {
-        let back = self.storyboard?.instantiateViewController(withIdentifier: "fourth") as! fourthViewController
-        self.present(back, animated: true)
-    }
+   
     
 
   
 
-}
+}//class
 
 extension showChartViewController: SChartDatasource
 {
@@ -68,15 +130,18 @@ extension showChartViewController: SChartDatasource
         return series
     }
     func sChart(_ chart: ShinobiChart, numberOfDataPointsForSeriesAt seriesIndex: Int) -> Int {
-        return languageData.count
+        return 3
     }
     
     func sChart(_ chart: ShinobiChart, dataPointAt dataIndex: Int, forSeriesAt seriesIndex: Int) -> SChartData {
-        let language = languageData[dataIndex]
+        // var array2 = parsing(email: "sanda@gmail.com")
+        let mm = languageName[dataIndex]
+        let nn =  array[dataIndex]
         
         let datapoint = SChartRadialDataPoint()
-        datapoint.name = language.name
-        datapoint.value = language.popularity as NSNumber?
+        datapoint.name = mm
+        datapoint.value = nn as NSNumber?
+
         
         
         

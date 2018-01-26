@@ -104,6 +104,7 @@ class applyLeaveViewController: UIViewController,MFMailComposeViewControllerDele
                     
                     
                     var str: String? = jsonData.value(forKey: "success") as! String?
+                    var msg: String? = jsonData.value(forKey: "message") as! String?
                     
                     if sss == str {
                         
@@ -111,7 +112,9 @@ class applyLeaveViewController: UIViewController,MFMailComposeViewControllerDele
                         
                     } else {
                         
-                        self.callAlert(message: "COULDN'T UPDATE SUCCESFULLY")
+                        // self.callAlert(message: msg!)
+                         self.callAlert(message: "COULDN'T UPDATE SUCCESFULLY \(msg!)")
+                        
                         
                     }
                     
@@ -132,7 +135,18 @@ class applyLeaveViewController: UIViewController,MFMailComposeViewControllerDele
     func configureMailController() -> MFMailComposeViewController
     {
    
-        var body:String = "Sir, Can I apply leave for DATE : \(datePickerTxt.text) TYPE :\(leaveTypeTxt)  NO:OF LEAVE I WANT :\(noOfLeaveTxt)"
+       
+        
+        var str1 = "Sir, Can I apply leave for  DATE:"
+        var str2 = datePickerTxt.text!
+        var str3 = "  TYPE:"
+        var str4 = leaveTypeTxt.text!
+        var str5 = "  NO:OF LEAVE DATE:"
+        var str6 = noOfLeaveTxt.text!
+        var body:String = "\(str1) \(str2) \(str3) \(str4) \(str5) \(str6)"
+        
+        
+       // print(body)
         
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
