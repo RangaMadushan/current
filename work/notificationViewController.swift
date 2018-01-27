@@ -11,23 +11,34 @@ import Alamofire
 import SwiftyJSON
 
 let getLastRequestedLeaveURL = "https://fr129.wearedesigners.net/public/api/leavestatus"
+let getMyLeaveDetails = "https://fr129.wearedesigners.net/public/api/leave"
 let check1 = "valid"
 let check2 = "invalid"
-let check3 = "reject"
-let check4 = "no more notification"
+let check3 = "no more pending"
+let check4 = "last leave is still pending"
 let check5 = "accept"
 let check6 = "leave request still pending"
 
-class notificationViewController: UIViewController {
+class notificationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var myArray = [String]()
+    var myArray2 = [String]()
+    var myArray3 = [String]()
     
     @IBOutlet weak var getNotificationLBL: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getNotificationLBL.text = ""
-       // parse(email: selectedUserEmail)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
         
+//        parse(email: selectedUserEmail)
+//        parseData(email: selectedUserEmail)
+       // self.tableView.reloadData()
+       // parse(email: selectedUserEmail)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +49,33 @@ class notificationViewController: UIViewController {
     @IBAction func checkNotification(_ sender: AnyObject) {
         
         parse(email: selectedUserEmail)
+        parseData(email: selectedUserEmail)
+      
     }
+    
+    
+    //START OF TABLE VIEW
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return myArray.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? UITableViewCell
+        
+        
+        cell?.textLabel?.text = myArray[indexPath.row] as? String
+        cell?.detailTextLabel?.text = myArray2[indexPath.row] as? String
+        return cell!
+        
+        
+    }
+    //END OF TABLE VIEW
+    
+
 
     
     //FUNCTION TO Post request
@@ -65,23 +102,22 @@ class notificationViewController: UIViewController {
                     var str: String? = jsonData.value(forKey: "success") as! String?
                     var msg: String? = jsonData.value(forKey: "message") as! String?
                     
+                    
+                    
+                    
                     if check1 == str {
                         
-                        if check3 == msg{
-                      self.getNotificationLBL.text = "Your requested leaves was REJECTED"
-                        } else if check5 == msg {
-                       self.getNotificationLBL.text = "Your requested leaves was ACCEPTED"
+                        if check4 == msg{
+                      self.getNotificationLBL.text = "Your last leave request still PENDING"
+                        } else if check3 == msg {
+                       self.getNotificationLBL.text = "You have not any pending request, Already responsed"
                         }
                         
                     } else {
                         
-                        if check4 == msg {
-                      self.getNotificationLBL.text = "You have no new notification regarding your requested leaves"
+                      self.getNotificationLBL.text = "you can't request leaves"
                         
-                        } else if check6 == msg {
-                       self.getNotificationLBL.text = "Your leave request still pending"
                         
-                        }
                         
                         
                     }
@@ -92,6 +128,41 @@ class notificationViewController: UIViewController {
         }
         
     } //func parse
+    
+    
+    //func for parsing table
+    func parseData(email: String)
+    {
+        let parameters: Parameters=[
+            "email":email
+            
+        ]
+        
+        Alamofire.request(getMyLeaveDetails, method: .post, parameters: parameters).responseJSON
+            { response in
+                //print(response) //methandi enne object widiyta {}mehema
+                
+                if let result = response.result.value
+                {
+                    //print(result); //methan enneth object wagemai
+                    let data = JSON(result)
+                    //print(data);
+                    
+                    for i in 0..<data.count
+                    {
+                        let date = data[i]["LeaveStartDate"]
+                        self.myArray.append(date.string!)
+                        let acceptance = data[i]["AcceptReject"]
+                        self.myArray2.append(acceptance.string!)
+                    }
+                    
+                    
+                    self.tableView.reloadData()
+                    
+                }
+        }
+    }// func parsing table data
+    
 
    
 
