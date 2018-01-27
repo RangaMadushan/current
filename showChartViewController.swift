@@ -11,11 +11,13 @@ import ShinobiCharts
 import Alamofire
 import SwiftyJSON
 
+var chooseArray = [Int]()
+
 class showChartViewController: UIViewController
 {
     var languageName:[String] = ["Medical","casual","annual"]
     var languageData = [Int]()
-    var array:[Int] = [5,5,4]
+    var array:[Int] = [5,5,5]
 
     @IBOutlet weak var medicleLabel: UILabel!
     
@@ -30,6 +32,7 @@ class showChartViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+      //  chooseArray = parsing(email: selectedUserEmail)
         parsing(email: selectedUserEmail)
         ShinobiCharts.trialKey = "cXFg-fVgB-V1sA-ayZ9-NHhc-DVRV"
         chart.datasource = self
@@ -43,7 +46,7 @@ class showChartViewController: UIViewController
     }
     
    
-    func parsing (email:String) -> [Int]{
+    func parsing (email:String) ->[Int] {
         
         
         //creating parameters for the post request
@@ -90,7 +93,7 @@ class showChartViewController: UIViewController
                     self.casualLabel.text = "\(casual)"
                     
                     
-                    self.chart.reloadData()
+                   
                     
                     
                     
@@ -100,6 +103,7 @@ class showChartViewController: UIViewController
         }
         
         return languageData
+        
         
     }//func
 
@@ -134,9 +138,9 @@ extension showChartViewController: SChartDatasource
     }
     
     func sChart(_ chart: ShinobiChart, dataPointAt dataIndex: Int, forSeriesAt seriesIndex: Int) -> SChartData {
-        // var array2 = parsing(email: "sanda@gmail.com")
+        // chooseArray = parsing(email: "sanda@gmail.com")
         let mm = languageName[dataIndex]
-        let nn =  array[dataIndex]
+        let nn = array[dataIndex]
         
         let datapoint = SChartRadialDataPoint()
         datapoint.name = mm

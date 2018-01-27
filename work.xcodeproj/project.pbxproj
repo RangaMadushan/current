@@ -63,6 +63,7 @@
 		BC9D503420191E0B00F4A78B /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D502220191E0B00F4A78B /* IQUIView+IQKeyboardToolbar.swift */; };
 		BC9D503520191E0B00F4A78B /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC9D502420191E0B00F4A78B /* IQKeyboardManager.bundle */; };
 		BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */; };
+		BCA7AD0E201C616F005EE420 /* RateOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */; };
 		BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD937CF1FB4372900355EDE /* thirdViewController.swift */; };
 		BCD937D21FB4381600355EDE /* michal-grosicki-235026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */; };
 		BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */; };
@@ -139,6 +140,7 @@
 		BC9D502220191E0B00F4A78B /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		BC9D502420191E0B00F4A78B /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateOtherViewController.swift; sourceTree = "<group>"; };
 		BCD937CF1FB4372900355EDE /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "michal-grosicki-235026.jpg"; sourceTree = "<group>"; };
 		BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmOutViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				BC0BADC22016E0F60097BA6C /* myDetailViewController.swift */,
 				BC0BADC42016E1640097BA6C /* myRankViewController.swift */,
 				BC0BADC62016E1870097BA6C /* extraViewController.swift */,
+				BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9D502520191E0B00F4A78B /* IQNSArray+Sort.swift in Sources */,
+				BCA7AD0E201C616F005EE420 /* RateOtherViewController.swift in Sources */,
 				BC9D502620191E0B00F4A78B /* IQUIScrollView+Additions.swift in Sources */,
 				BC0E5F4E20145DCE00681BE8 /* Contact.swift in Sources */,
 				BC9D503220191E0B00F4A78B /* IQTitleBarButtonItem.swift in Sources */,

@@ -152,9 +152,18 @@ class notificationViewController: UIViewController, UITableViewDelegate, UITable
                     {
                         let date = data[i]["LeaveStartDate"]
                         self.myArray.append(date.string!)
-                        let acceptance = data[i]["AcceptReject"]
+                        
+                        var acceptance = data[i]["AcceptReject"]
+                        
+                        if acceptance == nil  {
+                        
+                        acceptance = "pending"
                         self.myArray2.append(acceptance.string!)
-                    }
+                        }else{
+                        
+                        self.myArray2.append(acceptance.string!)
+                        }
+                        }
                     
                     
                     self.tableView.reloadData()
