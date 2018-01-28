@@ -15,6 +15,7 @@ import SwiftyJSON
 class RateOtherViewController: UIViewController {
 
     var giveFeedbackURL = "https://fr129.wearedesigners.net/public/api/givefeedback"
+    var getCurrentRankURL = "https://fr129.wearedesigners.net/public/api/getrank"
     
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var CurrentRankLable: UILabel!
@@ -22,43 +23,59 @@ class RateOtherViewController: UIViewController {
     
     var reviewer = selectedUserEmail
     var reviewee = selectedArrayEmail[myIndex]
+    var myRank = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     nameLable.text = selectedArrayName[myIndex]
-     CurrentRankLable.text = selectedRank[myIndex]
-     emailLabel.text = selectedArrayEmail[myIndex]
+       nameLable.text = selectedArrayName[myIndex]
+       emailLabel.text = selectedArrayEmail[myIndex]
+   //  CurrentRankLable.text = selectedRank[myIndex]
+        
+        self.parsing(email: reviewee)
+
+       
+        
+        
         
     }
     
     
     @IBAction func oneStarBtn(_ sender: AnyObject) {
         
-        self.parse(reviewee: reviewee, reviewer: reviewer, rank: 1)
+        //self.parse(reviewee: reviewee, reviewer: reviewer, rank: 1)
+       self.parsing(email: reviewee)
     }
     
     
     @IBAction func twoStarBtn(_ sender: AnyObject) {
         self.parse(reviewee: reviewee, reviewer: reviewer, rank: 2)
+        self.parsing(email: reviewee)
+
     }
     
     
     @IBAction func threeStarBtn(_ sender: AnyObject) {
         
         self.parse(reviewee: reviewee, reviewer: reviewer, rank: 3)
+        self.parsing(email: reviewee)
+
     }
     
     
     @IBAction func fourStarBtn(_ sender: AnyObject) {
         
         self.parse(reviewee: reviewee, reviewer: reviewer, rank: 4)
+        self.parsing(email: reviewee)
+
     }
     
     
     @IBAction func fiveStarBtn(_ sender: AnyObject) {
         
         self.parse(reviewee: reviewee, reviewer: reviewer, rank: 5)
+        self.parsing(email: reviewee)
+
     }
 
     
@@ -95,6 +112,42 @@ class RateOtherViewController: UIViewController {
         
     } //func parse
 
+    
+    //func parsing for get current rank
+    func parsing(email: String) {
+        
+        let parameters: Parameters=[
+            "email":reviewee
+            
+        ]
+        
+        Alamofire.request("https://fr129.wearedesigners.net/public/api/getrank", method: .post, parameters: parameters).responseJSON
+            {
+                response in
+                
+                print(response);
+                
+                
+                if let result = response.result.value {
+                    
+                    //converting it as NSDictionary
+                    let jsonData = result as! NSDictionary
+                    
+                    
+                    
+                   // var rank: String? = jsonData.value(forKey: "message") as! String?
+                   // var myRank = jsonData.value(forKey: "message") as! String
+                    var abc = jsonData.value(forKey: "message") as! Double
+                    
+                    
+                    self.CurrentRankLable.text = "\(abc)"
+                    
+                  
+                    
+                }
+        }
+        
+    } //func parsing for get current rank
    
     
     //func alert calling
