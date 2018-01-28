@@ -33,13 +33,14 @@ class ViewController: UIViewController, UITextFieldDelegate
         self.passwordText.delegate = self
 
     }
+    
 
     
     @IBAction func login(_ sender: AnyObject)
     {
         let a = usernameText.text
         let b = passwordText.text
-        
+        checkReachability()
         self.parse(useremail: a!, password: b!);
         
     }
@@ -132,6 +133,21 @@ class ViewController: UIViewController, UITextFieldDelegate
         
         return  returnValue
     }//func validate email address
+    
+    
+    //func for check connection
+    func checkReachability(){
+        if currentReachabilityStatus == .reachableViaWiFi {
+            print("User is connected to the internet via wifi.")
+        }else if currentReachabilityStatus == .reachableViaWWAN{
+            print("User is connected to the internet via WWAN.")
+        } else {
+            self.callAlert(message: "There is no internet connection")
+        }
+    }
+    //func check connection
+    
+    
     
     
     //func alert calling

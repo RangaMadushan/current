@@ -64,6 +64,7 @@
 		BC9D503520191E0B00F4A78B /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC9D502420191E0B00F4A78B /* IQKeyboardManager.bundle */; };
 		BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */; };
 		BCA7AD0E201C616F005EE420 /* RateOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */; };
+		BCA7AD14201DEDBF005EE420 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7AD13201DEDBF005EE420 /* Reachability.swift */; };
 		BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD937CF1FB4372900355EDE /* thirdViewController.swift */; };
 		BCD937D21FB4381600355EDE /* michal-grosicki-235026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */; };
 		BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */; };
@@ -141,6 +142,7 @@
 		BC9D502420191E0B00F4A78B /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateOtherViewController.swift; sourceTree = "<group>"; };
+		BCA7AD13201DEDBF005EE420 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BCD937CF1FB4372900355EDE /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "michal-grosicki-235026.jpg"; sourceTree = "<group>"; };
 		BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmOutViewController.swift; sourceTree = "<group>"; };
@@ -208,18 +210,18 @@
 				BCD937CF1FB4372900355EDE /* thirdViewController.swift */,
 				BC48C5F91FB4E43700EFFBD0 /* fourthViewController.swift */,
 				BC515BC21FDEF39C00925D9F /* applyLeaveViewController.swift */,
-				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
-				BCF107A7200F3D7500AFF247 /* confirmInViewController.swift */,
 				BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */,
+				BCF107A7200F3D7500AFF247 /* confirmInViewController.swift */,
 				BC48C6011FB4F20800EFFBD0 /* notificationViewController.swift */,
-				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
 				BC18EEDE2016CAA800F2D348 /* frogetFingerViewController.swift */,
+				BC905F5D1FE972A80031588F /* ScheduleViewController.swift */,
 				BC18EEE02016D45000F2D348 /* PatternViewController.swift */,
+				BC2346692010C1FD000F7722 /* showChartViewController.swift */,
 				BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */,
 				BC0BADC22016E0F60097BA6C /* myDetailViewController.swift */,
 				BC0BADC42016E1640097BA6C /* myRankViewController.swift */,
-				BC0BADC62016E1870097BA6C /* extraViewController.swift */,
 				BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */,
+				BC0BADC62016E1870097BA6C /* extraViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -230,6 +232,7 @@
 				BC635AA820137FD20062346A /* AuthProvider.swift */,
 				BC635AAA20139A3A0062346A /* DBProvider.swift */,
 				BC0E5F512014B38C00681BE8 /* MessagesHandler.swift */,
+				BCA7AD13201DEDBF005EE420 /* Reachability.swift */,
 				BC18EEDC2016C63600F2D348 /* Provider.swift */,
 			);
 			name = Plugins;
@@ -561,6 +564,7 @@
 				BC9D502F20191E0B00F4A78B /* IQTextView.swift in Sources */,
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC0BADC32016E0F60097BA6C /* myDetailViewController.swift in Sources */,
+				BCA7AD14201DEDBF005EE420 /* Reachability.swift in Sources */,
 				BC905F5E1FE972A80031588F /* ScheduleViewController.swift in Sources */,
 				BC9D502820191E0B00F4A78B /* IQUIView+Hierarchy.swift in Sources */,
 				BCFA18AE1FB24D0400B10E24 /* secondViewController.swift in Sources */,
