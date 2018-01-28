@@ -26,7 +26,7 @@ class Provider {
         let year = calendar.component(.year, from: date)
         let month = calendar.component(.month, from: date)
         let day = calendar.component(.day, from: date)
-        return "\(year):\(month):\(day)"
+        return "\(day):\(month):\(year)"
         
     }// func to get current date
     

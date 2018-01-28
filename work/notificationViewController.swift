@@ -73,6 +73,18 @@ class notificationViewController: UIViewController, UITableViewDelegate, UITable
         
         
     }
+    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            myArray.remove(at: indexPath.row)
+            myArray2.remove(at: indexPath.row)
+            tableView.reloadData()
+            
+        }
+    }
+    
     //END OF TABLE VIEW
     
 

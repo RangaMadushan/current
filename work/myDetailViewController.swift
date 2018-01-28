@@ -15,7 +15,7 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
     
     var startDate:[String] = [] //needs
     var endDate:[String] = []
-    var titlesName:[String] = ["First Name","Last Name", "date of birt", "Email", "Working Hours"]
+    var titlesName:[String] = ["First Name","Last Name", "date of birth", "Email", "Working Hours", "Date of Admission", "Category", "Department"]
     var myArray = [String]()
     var myArray2 = [String]()
     var myArray3 = [String]()
@@ -70,31 +70,39 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
                     let jsonData = result as! NSDictionary
                     
                     var firstname = jsonData.value(forKey: "firstname") as! String
-                    print(firstname)
-                    self.myArray.append(firstname)
+                   // print(firstname)
+                   // self.myArray.append(firstname)
                     print(self.myArray);
                     
                     var lastname = jsonData.value(forKey: "lastname") as! String
-                    print(lastname)
+                   // print(lastname)
                     self.myArray.append(lastname)
-                    print(self.myArray)
+                   // print(self.myArray)
                     
                     var dob = jsonData.value(forKey: "dob") as! String
-                    print(dob)
+                   // print(dob)
                     self.myArray.append(dob)
-                    print(self.myArray)
+                   // print(self.myArray)
                     
                     
                     var email = jsonData.value(forKey: "email") as! String
-                    print(email)
                     self.myArray.append(email)
-                    print(self.myArray)
+                   
                     
                     var workinghours = jsonData.value(forKey: "workinghours") as! String
-                    print(workinghours)
                     self.myArray.append(workinghours)
-                    print(self.myArray)
+                  
                     
+                    var startdate = jsonData.value(forKey: "startdate") as! String
+                    self.myArray.append(startdate)
+                   
+                    
+                    var category = jsonData.value(forKey: "category") as! String
+                    self.myArray.append(category)
+                  
+                    
+                    var department = jsonData.value(forKey: "department") as! String
+                    self.myArray.append(department)
                     
                     self.tableView.reloadData()
                     
