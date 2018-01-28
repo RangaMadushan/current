@@ -70,19 +70,16 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
                     let jsonData = result as! NSDictionary
                     
                     var firstname = jsonData.value(forKey: "firstname") as! String
-                   // print(firstname)
-                   // self.myArray.append(firstname)
-                    print(self.myArray);
+                    self.myArray.append(firstname)
+                   
                     
                     var lastname = jsonData.value(forKey: "lastname") as! String
-                   // print(lastname)
                     self.myArray.append(lastname)
-                   // print(self.myArray)
+                   
                     
                     var dob = jsonData.value(forKey: "dob") as! String
-                   // print(dob)
                     self.myArray.append(dob)
-                   // print(self.myArray)
+                   
                     
                     
                     var email = jsonData.value(forKey: "email") as! String
