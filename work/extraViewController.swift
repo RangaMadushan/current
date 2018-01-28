@@ -103,11 +103,11 @@ class extraViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.myArray.append(PartEndDate.string!)
                 
                 
-                var fill1 = "---------------------"
+                var fill1 = "******************"
                 self.myArray.append(fill1)
                 
                 
-                var fill2 = "---------------------"
+                var fill2 = "******************"
                 self.myArray.append(fill2)
                     
                 self.myArray2.append("Project Name")
@@ -116,8 +116,8 @@ class extraViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.myArray2.append("My Part")
                 self.myArray2.append("Part Started date")
                 self.myArray2.append("Part Should End")
-                self.myArray2.append("--------------------")
-                self.myArray2.append("--------------------")
+                self.myArray2.append("******************")
+                self.myArray2.append("******************")
                 }
                 
                 self.tableView.reloadData()
