@@ -49,11 +49,21 @@ class SignInVC: UIViewController {
                     self.alertTheUser(title: "Problem With Authentication", message: message!);
                 }else{
                     
+          
+                    if self.emailTextfield.text == selectedUserEmail {
+                        
                     print("LOGIN COMPLETED");
                     self.emailTextfield.text = ""
                     self.passwordTextfield.text = ""
                     
                     self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil)
+                    
+                    }else{
+                    
+                        self.alertTheUser(title: "Problem With Authentication", message: "You Have To Use Your Company Email To Login");
+                    
+                    }
+                
                 }
                 
             })
@@ -67,8 +77,11 @@ class SignInVC: UIViewController {
 
     @IBAction func signUp(_ sender: AnyObject) {
         
+        if emailTextfield.text == selectedUserEmail {
+        
         if emailTextfield.text != "" && passwordTextfield.text != ""
         {
+            
             
                 AuthProvider.Instance.signUp(withEmail: emailTextfield.text!, password: passwordTextfield.text!, loginHandler: { (message) in
                     
@@ -78,11 +91,16 @@ class SignInVC: UIViewController {
                         
                     }else{
                     
+                        
+                            
                         print("SIGNUP COMPLETED");
                         self.emailTextfield.text = ""
                         self.passwordTextfield.text = ""
                         
                         self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil)
+                       
+                        
+                        
                         
                     }
                     
@@ -95,7 +113,11 @@ class SignInVC: UIViewController {
             self.alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password in the text fields");
         }
         
+        }else{
         
+            self.alertTheUser(title: "Problem With Creating A New User", message: "You Have To Use Your Company Email To Create A New User");
+            
+        }
         
     }
     

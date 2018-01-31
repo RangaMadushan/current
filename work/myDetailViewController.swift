@@ -34,6 +34,12 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
         self.tableView.reloadData()
     }
 
+    //pw change button
+    @IBAction func changePasswordBtn(_ sender: AnyObject) {
+        performSegue(withIdentifier: "resetPasswordSegue", sender: nil)
+        
+    }
+    
     
     //START OF TABLE VIEW
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class frogetFingerViewController: UIViewController {
 
+    
+    var myArray = [String]()
     var getAdminMsg = "https://fr129.wearedesigners.net/public/api/adminmessage"
     
     
@@ -67,23 +69,30 @@ class frogetFingerViewController: UIViewController {
                     
                     
                     var c1: String? = jsonData.value(forKey: "success") as! String?
-                    var c2: String? = jsonData.value(forKey: "message") as! String?
                     
+                    self.notificationLBL.text = "You Have no msg"
                     
+                //    var c2 = jsonData.value(forKey: "message")
                     
-                    
-                    if c1 == "valid" {
-                        
-                        self.notificationLBL.text = c2
-                        
-                    } else {
-                        
-                        self.notificationLBL.text = "you have no new message about frogotten fingerprint"
-                        
-                        
-                        
-                        
-                    }
+//                    if c2 == nil {
+//                        
+//                       self.notificationLBL.text = "you have no new message about frogotten fingerprint"
+//                    
+//                    } else {
+//                     
+//                        let data = JSON(c2)
+//                    
+//                        for i in 0..<data.count
+//                        {
+//                            let notify = data[i]["Content"]
+//                            self.myArray.append(notify.string!)
+//                            
+//                            
+//                    
+//                    }
+//                    
+//                    }
+                
                     
                     
                     

@@ -65,6 +65,7 @@
 		BCA29AE62016DC32009EFCD5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */; };
 		BCA7AD0E201C616F005EE420 /* RateOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */; };
 		BCA7AD14201DEDBF005EE420 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7AD13201DEDBF005EE420 /* Reachability.swift */; };
+		BCCF2A712022557200E5FC3A /* resetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2A702022557200E5FC3A /* resetPasswordViewController.swift */; };
 		BCD937D01FB4372900355EDE /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD937CF1FB4372900355EDE /* thirdViewController.swift */; };
 		BCD937D21FB4381600355EDE /* michal-grosicki-235026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */; };
 		BCF107A6200F3D4E00AFF247 /* confirmOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */; };
@@ -143,6 +144,7 @@
 		BCA29AE52016DC32009EFCD5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateOtherViewController.swift; sourceTree = "<group>"; };
 		BCA7AD13201DEDBF005EE420 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BCCF2A702022557200E5FC3A /* resetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
 		BCD937CF1FB4372900355EDE /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		BCD937D11FB4381600355EDE /* michal-grosicki-235026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "michal-grosicki-235026.jpg"; sourceTree = "<group>"; };
 		BCF107A5200F3D4E00AFF247 /* confirmOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmOutViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				BC0BADC42016E1640097BA6C /* myRankViewController.swift */,
 				BCA7AD0D201C616F005EE420 /* RateOtherViewController.swift */,
 				BC0BADC62016E1870097BA6C /* extraViewController.swift */,
+				BCCF2A702022557200E5FC3A /* resetPasswordViewController.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				BC9D502C20191E0B00F4A78B /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				BC8115BD2013671D00282B39 /* SignInVC.swift in Sources */,
 				BC9D502F20191E0B00F4A78B /* IQTextView.swift in Sources */,
+				BCCF2A712022557200E5FC3A /* resetPasswordViewController.swift in Sources */,
 				BC2346702010C687000F7722 /* ProgrammingLanguageData.swift in Sources */,
 				BC0BADC32016E0F60097BA6C /* myDetailViewController.swift in Sources */,
 				BCA7AD14201DEDBF005EE420 /* Reachability.swift in Sources */,
