@@ -75,6 +75,15 @@ class thirdViewController: UIViewController
         
     }
     
+    
+    @IBAction func frogotFR(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "frogotFRSegue", sender: nil)
+        
+    }
+    
+    
+    //removed
     @IBAction func goFrPrintBtn(_ sender: AnyObject) {
         
         performSegue(withIdentifier: "fingerprintSegue", sender: nil)

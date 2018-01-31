@@ -86,8 +86,8 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
                     self.myArray.append(email)
                    
                     
-                    var workinghours = jsonData.value(forKey: "workinghours") as! String
-                    self.myArray.append(workinghours)
+                    var workinghours = jsonData.value(forKey: "workinghours") as! Int
+                    self.myArray.append("\(workinghours)")
                   
                     
                     var startdate = jsonData.value(forKey: "startdate") as! String

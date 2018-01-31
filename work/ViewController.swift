@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 var selectedUserEmail = ""
+var selectedPassword = ""
 let myLoginURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
 let s = "validation successful"
 
@@ -73,6 +74,7 @@ class ViewController: UIViewController, UITextFieldDelegate
                         
                         //self.callAlert(message: "YOU SUCCESFULLY LOGGED")
                         selectedUserEmail = self.usernameText.text!
+                        selectedPassword = self.passwordText.text!
                         self.gotoNext()
                        // selectedUserEmail = self.usernameText.text!
                         

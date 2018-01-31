@@ -12,7 +12,7 @@ import Foundation
 class Provider {
     
     private static let _instance = Provider()
-    //this is for create instance of Authprovider to use everywhere
+    //this is for create instance of provider to use everywhere
     static var Instance: Provider {
         return _instance;
     }
@@ -26,7 +26,7 @@ class Provider {
         let year = calendar.component(.year, from: date)
         let month = calendar.component(.month, from: date)
         let day = calendar.component(.day, from: date)
-        return "\(day):\(month):\(year)"
+        return "\(day)/\(month)/\(year)"
         
     }// func to get current date
     

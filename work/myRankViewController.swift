@@ -84,7 +84,7 @@ class myRankViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         let name = data[i]["FirstName"]
                         self.myArray.append(name.string!)
                         let rank = data[i]["Rank"]
-                        self.myArray2.append(rank.string!)
+                        self.myArray2.append("\(rank)")
                         let email = data[i]["EmailAddress"]
                         self.myArray3.append(email.string!)
                     }

@@ -75,21 +75,21 @@ class showChartViewController: UIViewController
                     let jsonData = result as! NSDictionary
                     
                     var medicle = jsonData.value(forKey: "medical") as! Int
-                    print(medicle)
+                   // print(medicle)
                     self.languageData.append(medicle)
-                    print(self.languageData);
+                   // print(self.languageData);
                     self.medicleLabel.text = "\(medicle)"
                     
                     var annual = jsonData.value(forKey: "annual") as! Int
-                    print(annual)
+                   // print(annual)
                     self.languageData.append(annual)
-                    print(self.languageData);
+                   // print(self.languageData);
                     self.annualLabel.text = "\(annual)"
                     
                     var casual = jsonData.value(forKey: "casual") as! Int
-                    print(casual)
+                   // print(casual)
                     self.languageData.append(casual)
-                    print(self.languageData);
+                   // print(self.languageData);
                     self.casualLabel.text = "\(casual)"
                     
                     
