@@ -14,7 +14,7 @@ class frogetFingerViewController: UIViewController {
 
     
     var myArray = [String]()
-    var getAdminMsg = "https://fr129.wearedesigners.net/public/api/adminmessage"
+    var getAdminMsg = "https://fr129.wearedesigners.net/public/api/iosadminmessage"
     
     
     @IBOutlet weak var notificationLBL: UILabel!
@@ -70,29 +70,31 @@ class frogetFingerViewController: UIViewController {
                     
                     var c1: String? = jsonData.value(forKey: "success") as! String?
                     
-                    self.notificationLBL.text = "You Have no msg"
+                  
+                    if c1 == "invalid" {
                     
-                //    var c2 = jsonData.value(forKey: "message")
+                        var c3: String? = jsonData.value(forKey: "message") as! String?
+                        print(c3!)
+                        self.notificationLBL.text! = c3!
                     
-//                    if c2 == nil {
-//                        
-//                       self.notificationLBL.text = "you have no new message about frogotten fingerprint"
-//                    
-//                    } else {
-//                     
-//                        let data = JSON(c2)
-//                    
-//                        for i in 0..<data.count
-//                        {
-//                            let notify = data[i]["Content"]
-//                            self.myArray.append(notify.string!)
-//                            
-//                            
-//                    
-//                    }
-//                    
-//                    }
-                
+                    }else{
+                        
+                        var c2: String? = jsonData.value(forKey: "Content") as! String?
+                        
+                        print(c2!)
+                        self.notificationLBL.text = c2!
+                        
+                        }
+                    
+                    
+                    
+                    
+                    
+            
+    
+        
+
+
                     
                     
                     

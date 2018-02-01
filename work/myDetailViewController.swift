@@ -135,7 +135,7 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
                     
                 }
         }
-    }// func parse data
+    }// func parse data X
 
    
 
