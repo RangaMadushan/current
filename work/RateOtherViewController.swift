@@ -14,8 +14,11 @@ import SwiftyJSON
 
 class RateOtherViewController: UIViewController {
 
-    var giveFeedbackURL = "https://fr129.wearedesigners.net/public/api/givefeedback"
-    var getCurrentRankURL = "https://fr129.wearedesigners.net/public/api/getrank"
+    var giveFeedbackURL = "http://employeeanalyzerapi.milandawijekoon.me/api/givefeedback"
+  //  var giveFeedbackURL = "https://fr129.wearedesigners.net/public/api/givefeedback"
+    
+    var getCurrentRankURL = "http://employeeanalyzerapi.milandawijekoon.me/api/getrank"
+   // var getCurrentRankURL = "https://fr129.wearedesigners.net/public/api/getrank"
     
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var CurrentRankLable: UILabel!
@@ -43,7 +46,7 @@ class RateOtherViewController: UIViewController {
     
     @IBAction func oneStarBtn(_ sender: AnyObject) {
         
-        //self.parse(reviewee: reviewee, reviewer: reviewer, rank: 1)
+       self.parse(reviewee: reviewee, reviewer: reviewer, rank: 1)
        self.parsing(email: reviewee)
     }
     
@@ -121,7 +124,7 @@ class RateOtherViewController: UIViewController {
             
         ]
         
-        Alamofire.request("https://fr129.wearedesigners.net/public/api/getrank", method: .post, parameters: parameters).responseJSON
+        Alamofire.request("http://employeeanalyzerapi.milandawijekoon.me/api/getrank", method: .post, parameters: parameters).responseJSON
             {
                 response in
                 

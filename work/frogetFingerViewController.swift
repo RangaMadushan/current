@@ -14,7 +14,8 @@ class frogetFingerViewController: UIViewController {
 
     
     var myArray = [String]()
-    var getAdminMsg = "https://fr129.wearedesigners.net/public/api/iosadminmessage"
+    var getAdminMsg = "http://employeeanalyzerapi.milandawijekoon.me/api/iosadminmessage"
+   // var getAdminMsg = "https://fr129.wearedesigners.net/public/api/iosadminmessage"
     
     
     @IBOutlet weak var notificationLBL: UILabel!

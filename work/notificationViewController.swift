@@ -10,8 +10,12 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-let getLastRequestedLeaveURL = "https://fr129.wearedesigners.net/public/api/leavestatus"
-let getMyLeaveDetails = "https://fr129.wearedesigners.net/public/api/leave"
+//let getLastRequestedLeaveURL = "https://fr129.wearedesigners.net/public/api/leavestatus"
+let getLastRequestedLeaveURL = "http://employeeanalyzerapi.milandawijekoon.me/api/leavestatus"
+
+//let getMyLeaveDetails = "https://fr129.wearedesigners.net/public/api/leave"
+let getMyLeaveDetails = "http://employeeanalyzerapi.milandawijekoon.me/api/leave"
+
 let check1 = "valid"
 let check2 = "invalid"
 let check3 = "no more pending"
@@ -120,9 +124,9 @@ class notificationViewController: UIViewController, UITableViewDelegate, UITable
                     if check1 == str {
                         
                         if check4 == msg{
-                      self.getNotificationLBL.text = "Your last leave request still PENDING"
+                      self.getNotificationLBL.text = "You have a PENDING request"
                         } else if check3 == msg {
-                       self.getNotificationLBL.text = "You have not any pending request, Already responsed"
+                       self.getNotificationLBL.text = "You have not any pending request"
                         }
                         
                     } else {

@@ -12,7 +12,8 @@ import SwiftyJSON
 
 var selectedUserEmail = ""
 var selectedPassword = ""
-let myLoginURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
+//let myLoginURL = "http://fr129.wearedesigners.net/public/api/loginattempt"
+let myLoginURL = "http://employeeanalyzerapi.milandawijekoon.me/api/loginattempt"
 let s = "validation successful"
 
 

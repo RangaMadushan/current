@@ -57,7 +57,7 @@ class showChartViewController: UIViewController
         
         
         //Sending http post request
-        Alamofire.request("http://fr129.wearedesigners.net/public/api/availableleaves", method: .post, parameters: parameters).responseJSON
+        Alamofire.request("http://employeeanalyzerapi.milandawijekoon.me/api/availableleaves", method: .post, parameters: parameters).responseJSON
             {
                 response in
                 

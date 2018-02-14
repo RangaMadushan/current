@@ -20,7 +20,8 @@ class resetPasswordViewController: UIViewController {
     
     
 
-    var resetPWURL = "https://fr129.wearedesigners.net/public/api/updatepassword"
+    var resetPWURL = "http://employeeanalyzerapi.milandawijekoon.me/api/updatepassword"
+  //  var resetPWURL = "https://fr129.wearedesigners.net/public/api/updatepassword"
     
     override func viewDidLoad() {
         super.viewDidLoad()

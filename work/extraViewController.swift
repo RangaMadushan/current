@@ -22,7 +22,8 @@ class extraViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var myArray2 = [String]()
     var myArray3 = [String]()
     
-    var userProjectURL = "http://fr129.wearedesigners.net/public/api/employeeproject"
+    var userProjectURL = "http://employeeanalyzerapi.milandawijekoon.me/api/employeeproject"
+  //  var userProjectURL = "http://fr129.wearedesigners.net/public/api/employeeproject"
     
     
     @IBOutlet weak var tableView: UITableView!

@@ -24,7 +24,8 @@ class applyLeaveViewController: UIViewController,MFMailComposeViewControllerDele
     var leaveType = ["medical","annual","casual"]
     var currentTime = Provider.Instance.currentTime() as String;
     var leaveDate = ""
-    let applyLeaveURL = "http://fr129.wearedesigners.net/public/api/leaveapply"
+   // let applyLeaveURL = "http://fr129.wearedesigners.net/public/api/leaveapply"
+    let applyLeaveURL = "http://employeeanalyzerapi.milandawijekoon.me/api/leaveapply"
     let admin = "bithuntersuom@gmail.com"
     
     

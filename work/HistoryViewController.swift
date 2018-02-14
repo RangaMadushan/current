@@ -17,7 +17,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var myArray2 = [String]()
     var myArray3 = [String]()
     
-    var userRecordHistoryURL = "http://fr129.wearedesigners.net/public/api/viewrecord"
+    var userRecordHistoryURL = "http://employeeanalyzerapi.milandawijekoon.me/api/viewrecord"
+   // var userRecordHistoryURL = "http://fr129.wearedesigners.net/public/api/viewrecord"
     
     @IBOutlet weak var tableView: UITableView!
     

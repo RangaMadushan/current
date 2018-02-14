@@ -21,7 +21,8 @@ class myRankViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var myArray2 = [String]()
     var myArray3 = [String]()
     
-    let URL_Employe_Rank = "http://fr129.wearedesigners.net/public/api/getfeedback"
+    let URL_Employe_Rank = "http://employeeanalyzerapi.milandawijekoon.me/api/getfeedback"
+ //   let URL_Employe_Rank = "http://fr129.wearedesigners.net/public/api/getfeedback"
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -83,8 +84,11 @@ class myRankViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     {
                         let name = data[i]["FirstName"]
                         self.myArray.append(name.string!)
+                        
                         let rank = data[i]["Rank"]
-                        self.myArray2.append("\(rank)")
+                      //  self.myArray2.append("\(rank)")
+                        self.myArray2.append(rank.string!)
+                        
                         let email = data[i]["EmailAddress"]
                         self.myArray3.append(email.string!)
                     }

@@ -20,7 +20,8 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
     var myArray2 = [String]()
     var myArray3 = [String]()
     
-    let URL_USER_DETALIS = "http://fr129.wearedesigners.net/public/api/employee"
+    let URL_USER_DETALIS = "http://employeeanalyzerapi.milandawijekoon.me/api/employee"
+//    let URL_USER_DETALIS = "http://fr129.wearedesigners.net/public/api/employee"
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -92,8 +93,8 @@ class myDetailViewController: UIViewController, UITableViewDelegate, UITableView
                     self.myArray.append(email)
                    
                     
-                    var workinghours = jsonData.value(forKey: "workinghours") as! Int
-                    self.myArray.append("\(workinghours)")
+                    var workinghours = jsonData.value(forKey: "workinghours") as! String
+                    self.myArray.append(workinghours)
                   
                     
                     var startdate = jsonData.value(forKey: "startdate") as! String
